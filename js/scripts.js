@@ -10,6 +10,8 @@ $(window).load(function() {
 
     });
 
+    getCustomizeParams();
+
 });
 
 $(document).ready(function() {
@@ -22,7 +24,7 @@ $(document).ready(function() {
    
     $(window).resize(function() {
 
-        
+        getCustomizeParams();
 
     });
     
@@ -54,3 +56,16 @@ $(document).ready(function() {
     // });
 
 });
+
+function getCustomizeParams() {
+
+    $(".shape_circle").each(function() {
+
+        $(this).css({
+            "width" : $(this).height() + "px",
+            "margin-left" : -$(this).height() / 2 + "px"
+        });
+
+    });
+
+}

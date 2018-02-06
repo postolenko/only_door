@@ -553,6 +553,17 @@ textarea:focus {
     color: #ffffff;
 }
 
+.map-marker-white {
+    display: inline-block;
+    vertical-align: top;
+    width: 13px;
+    height: 16px;
+    background-image: url(img/map_marker_white.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*-- /Icons --*/
 
 /*-------------------------------------------*/
@@ -1731,8 +1742,325 @@ a.tel-link.active {
     margin: 15px 0 0 0;
 }
 
-
 /*-- /Section 5 --*/
+
+/*-- Section 6 --*/
+
+.section-6 {
+    background: #2b2a30;
+    padding: 0;
+}
+
+.section-6:before {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: #242424;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section-6 .row {
+    position: relative;
+    z-index: 2;
+}
+
+.two-cols-templ {
+    padding: 11px 0;
+}
+
+.two-cols-templ .col-1 {
+    width: 50%;
+    padding: 5px 0;
+}
+
+.two-cols-templ .col-2 {
+    display: table;
+    width: 50%;
+    position: relative;
+    background: #242424;
+}
+
+.shape_circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    background: #242424;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.two-cols-templ .col-2:before {
+    display: block;
+    content: "";
+    height: 100%;
+}
+
+.two-cols-templ .col-2 .green-circle {
+    position: absolute;
+    top: 50%;
+    left: -23px;
+    margin: -23px 0 0 0;
+}
+
+.two-cols-templ h3 {
+    padding: 3px 0;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.two-cols-templ p {
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #bcbcbc;
+}
+
+.two-cols-templ .col-2-col {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    padding: 0 5px;
+}
+
+.two-cols-templ .col-2-col-1 {
+    padding-left: 63px;
+}
+
+.two-cols-templ .col-2-col-2 {
+    min-width: 220px;
+    text-align: right;
+}
+
+.two-cols-templ .col-2-col:last-child {
+    padding-right: 0;
+}
+
+.green-circle {
+    display: block;
+    width: 47px;
+    height: 47px;
+    position: relative;
+    text-align: center;
+    background: #1ba91d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.green-circle i {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.two-cols-templ .col-2 p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal;
+    color: #c5c5c5;
+}
+
+/*-- /Section 6 --*/
+
+/*-- /Section 7 --*/
+
+.section-7 {
+    background-image: url(img/section_7_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 27px;
+    padding-bottom: 12px;
+}
+
+.thumbnails_5 {
+    margin: 0 -15px;
+}
+
+.thumb_5 {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 15px;
+}
+
+.thumb_5 .inner {
+    display: block;
+    background: #ffffff;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.thumb_5 .inner:hover {
+    display: block;
+    background: #ffffff;
+    -webkit-box-shadow: 0 3px 17px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 3px 17px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 17px 0 rgba(0, 0, 0, .2);
+}
+
+.thumb_5 .img-box {
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumb_5 .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.green-arrow_box {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #14a72d;
+}
+
+.green-arrow_box:before {
+    content: "\f3d3";
+    font-family: "Ionicons";
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.thumb_5 .img-box .green-arrow_box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.thumb_5 .thumb-content {
+    height: 204px;
+    padding: 0 14px;
+    position: relative;
+}
+
+.thumb_5 .thumb-header {
+    height: 85px;
+    padding: 10px 0;
+}
+
+.thumb_5 .thumb-header p {
+    text-decoration: underline;
+    padding: 4px 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #31384c;
+}
+
+.thumb_5 .inner:hover .thumb-header p {
+    text-decoration: none;
+}
+
+.thumb_5 .thumb-header p.date {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #fe2929;
+}
+
+.thumb_5 .descript {
+    width: 100%;
+    padding: 0 14px 22px 14px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.thumb_5 .descript p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #5e5e5e;
+}
+
+/*-- /Section 7 --*/
+
+/*-- Section 8 --*/
+
+.section-8 {
+    padding-top: 27px;
+}
+
+.scroll-box {
+    height: 280px;
+    margin: 0 0 38px 0;
+}
+
+.scroll-box .mCSB_inside > .mCSB_container {
+    padding-right: 29px !important;
+}
+
+.scroll-box p {
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #5e5e5e;
+}
+
+.scroll-box p:nth-child(1) {
+    padding-top: 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 3px !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 3px !important;
+    background: #14a72d !important;
+    border-radius: 1.5px !important;
+    border-radius: 1.5px !important;
+    border-radius: 1.5px !important;
+}
+
+/*-- /Section 8 --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
