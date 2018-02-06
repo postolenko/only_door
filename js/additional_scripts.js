@@ -12,7 +12,6 @@ $(document).ready(function() {
         dots: true,
         arrows: true,
         // autoplay: true,
-        centerMode: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 2
