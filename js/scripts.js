@@ -13,6 +13,8 @@ var popupName;
 var hide_element;
 var popupBlock;
 
+var itemNum;
+
 $(window).load(function() {
 
     $("select").each(function() {
@@ -29,6 +31,20 @@ $(window).load(function() {
 
     getTHumbsHeight();
 
+    $(".num-mark").each(function() {
+
+        itemNum = 0;
+
+        $(this).find("li").each(function() {
+
+            itemNum++;
+
+            $(this).prepend("<span class='item-num'>" + itemNum + ".</span>");
+
+        });
+
+    });
+
 });
 
 $(document).ready(function() {
@@ -38,6 +54,7 @@ $(document).ready(function() {
         getCustomizeParams();
 
         // ------------------
+        $(".set_height .thumb .inner").css({"height" : "auto"});
 
         getTHumbsHeight();
 
@@ -182,11 +199,11 @@ function getTHumbsHeight() {
 
         thumbsHeightArr = [];
 
-        thumb = $(this).find(".thumb_1");
+        thumb = $(this).find(".thumb");
 
         thumb.each(function() {
 
-            thumbHeight = thumb.find(".inner").height();
+            thumbHeight = $(this).find(".inner").height();
 
             thumbsHeightArr.push(thumbHeight);
 
@@ -194,9 +211,9 @@ function getTHumbsHeight() {
 
         maxThumbHeight = Math.max.apply(null, thumbsHeightArr);
 
-        thumb.find(".inner").css({
-            "height" : maxThumbHeight + "px"
-        });
+        thumb.find(".inner").height(maxThumbHeight);
+
+        console.log(maxThumbHeight);
 
     });
 
