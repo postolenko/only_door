@@ -26,6 +26,22 @@ $(document).ready(function() {
 
         getCustomizeParams();
 
+        // ------------------
+
+        $(".popup-wrapp").each(function(){
+
+            if( $(this).hasClass("active") ) {
+
+                $(this).find(".popup").css({
+                    "margin-top" : ( $(window).height() - popupBlock.find(".popup").outerHeight(true) ) / 2 + "px"
+                });
+
+            }
+
+        });
+
+        
+
     });
     
     // var thumb;
@@ -54,6 +70,108 @@ $(document).ready(function() {
     //     });
 
     // });
+
+    $(function() {
+
+        $(".show_popup").click(function(e) {
+
+            e.preventDefault();
+
+            popupName = $(this).attr("data-show-popup");
+            popupBlock = $("#"+popupName);
+
+            if( !popupBlock.hasClass("active") ) {
+
+                popupBlock.addClass("active");
+
+                popupBlock.animate({
+                    "opacity" : 1
+                }, 400);
+
+                popupBlock.find(".popup").animate({
+                    "margin-top" : ( $(window).height() - popupBlock.find(".popup").outerHeight(true) ) / 2 + "px"
+                }, 400);
+
+            }
+
+        });
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27) {
+
+                $(".popup-wrapp").each(function() {
+
+                    if ( $(this).hasClass("active") ) {
+
+                        $(this).animate({
+                            "opacity" : 0
+                        }, 400);
+
+                        setTimeout(function() {
+
+                            $(this).removeClass("active");
+
+                        }, 700);
+
+                    }
+
+                });
+
+            }
+
+        });
+
+        $(".close-popup").click(function() {
+
+            popupBlock = $(this).closest(".popup-wrapp");
+
+            popupBlock.animate({
+                "opacity" : 0
+            }, 400);
+
+            setTimeout(function() {
+
+                popupBlock.removeClass("active");
+
+            }, 700);
+
+        });
+
+        $(document).mouseup(function (e){
+
+            hide_element = $('.popup');
+
+            popupBlock = hide_element.closest(".popup-wrapp");
+
+            if (!hide_element.is(e.target)
+                && hide_element.has(e.target).length === 0 
+                && popupBlock.hasClass("active") ) {
+
+                popupBlock.animate({
+                    "opacity" : 0
+                }, 400);
+
+                setTimeout(function() {
+
+                    popupBlock.removeClass("active");
+
+                }, 700);
+            }
+
+        });
+
+    });
+
+    $(".top_btn").click(function(e) {
+
+        e.preventDefault();
+
+        $("html, body").animate({
+            scrollTop: 0
+        }, 700);
+
+    });
 
 });
 
