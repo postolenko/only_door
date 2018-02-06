@@ -1,3 +1,7 @@
+var popupName;
+var hide_element;
+var popupBlock;
+
 $(window).load(function() {
 
     $("select").each(function() {
