@@ -648,6 +648,17 @@ textarea:focus {
     background-repeat: no-repeat;
 }
 
+.map-marker-13 {
+    display: inline-block;
+    vertical-align: top;
+    width: 13px;
+    height: 16px;
+    background-image: url(img/map_marker_13.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .telegram {
     display: inline-block;
     vertical-align: top;
@@ -2352,8 +2363,143 @@ a.tel-link.active {
     left: 0;
 }
 
-
 /*-- /Section 2 - Delivery --*/
+
+/*-- Section 1 - Contacts --*/
+
+.map-section {
+    padding: 0;
+}
+
+.map-box {
+    height: 550px;
+    margin: 14px 0 0 0;
+    position: relative;
+}
+
+#map {
+    min-height: 550px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.map-box .row {
+    height: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+.map-box .row .right-center {
+    display: block;
+    float: right;
+    height: 550px;
+    width: 1px;
+    position: relative;
+}
+
+.contacts_wrapp {
+    display: block;
+    width: 470px;
+    padding: 21px 28px;
+    background: #ffffff;
+}
+
+.map-box .row .right-center .contacts_wrapp {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.contacts_wrapp h3 {
+    padding-bottom: 6px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #212121;
+}
+
+.contacts-box {
+    display: table;
+    margin: 17px 0;
+}
+
+.contacts-box .col-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 38px;
+}
+
+.contacts-box .col-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+}
+
+.contacts-box p {
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: normal;
+    color: #212121;
+}
+
+.contacts-box p a {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: normal;
+    color: #212121;
+}
+
+.contacts-box p a:link,
+.contacts-box p a:visited {
+    color: #212121;
+}
+
+.contacts-box p a:hover {
+    color: #18812a;
+}
+
+.contacts-box p a:active {
+    color: #18812a;
+}
+
+.contacts-box i {
+    margin: 4px 0 0 0;
+    font-size: 21px;
+    line-height: 23px;
+    color: #17a82f;
+}
+
+.contacts-box i.ion-ios-email-outline {
+    font-size: 23px;
+    line-height: 23px;
+    color: #17a82f;
+}
+
+.contacts-boxes_wrapp .contacts-box {
+    display: inline-table;
+    vertical-align: top;
+    width: 48%;
+}
+
+.contacts-boxes_wrapp .contacts-box:nth-child(odd) {
+    margin-right: 2%;
+}
+
+.contacts-boxes_wrapp .contacts-box:nth-child(even) {
+    margin-left: 2%;
+}
+
+.contacts_wrapp .callback_1 {
+    margin: 13px 0;
+}
+
+/*-- /Section 1 - Contacts --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
