@@ -1,3 +1,14 @@
+var w = window,
+d = document,
+e = d.documentElement,
+g = d.getElementsByTagName('body')[0],
+bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+var thumb;
+var thumbsHeightArr = [];
+var thumbHeight;
+var maxThumbHeight;
+
 var popupName;
 var hide_element;
 var popupBlock;
@@ -16,19 +27,19 @@ $(window).load(function() {
 
     getCustomizeParams();
 
+    getTHumbsHeight();
+
 });
 
 $(document).ready(function() {
-
-    var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
    
     $(window).resize(function() {
 
         getCustomizeParams();
+
+        // ------------------
+
+        getTHumbsHeight();
 
         // ------------------
 
@@ -47,33 +58,6 @@ $(document).ready(function() {
         
 
     });
-    
-    // var thumb;
-    // var thumbsHeightArr = [];
-    // var thumbHeight;
-    // var maxThumbHeight;
-
-    // $(".thumbnails_3").each(function() {
-
-    //     thumbsHeightArr = [];
-
-    //     thumb = $(this).find(".thumb_3");
-
-    //     thumb.each(function() {
-
-    //         thumbHeight = thumb.find(".desc_wrapp").height();
-
-    //         thumbsHeightArr.push(thumbHeight);
-
-    //     });
-
-    //     maxThumbHeight = Math.max.apply(null, thumbsHeightArr);
-
-    //     thumb.css({
-    //         "height" : maxThumbHeight + "px"
-    //     });
-
-    // });
 
     $(function() {
 
@@ -186,6 +170,32 @@ function getCustomizeParams() {
         $(this).css({
             "width" : $(this).height() + "px",
             "margin-left" : -$(this).height() / 2 + "px"
+        });
+
+    });
+
+}
+
+function getTHumbsHeight() {
+
+    $(".set_height").each(function() {
+
+        thumbsHeightArr = [];
+
+        thumb = $(this).find(".thumb_1");
+
+        thumb.each(function() {
+
+            thumbHeight = thumb.find(".inner").height();
+
+            thumbsHeightArr.push(thumbHeight);
+
+        });
+
+        maxThumbHeight = Math.max.apply(null, thumbsHeightArr);
+
+        thumb.find(".inner").css({
+            "height" : maxThumbHeight + "px"
         });
 
     });

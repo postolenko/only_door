@@ -6,15 +6,7 @@ $(window).on("load",function(){
 
 });
 
-$(document).ready(function() {		
-
-	$("select").each(function() {
-
-		$(this).select2({
-			minimumResultsForSearch: Infinity
-		});
-
-	});
+$(document).ready(function() {
 
 	$(".slider_1").not(".slick-initialized").slick({
         dots: true,
