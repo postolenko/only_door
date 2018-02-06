@@ -2514,10 +2514,15 @@ ul.tels-nav li a:hover {
 
 .checkbox_wrapp {
     margin: 13px 0;
+    position: relative;
 }
 
 .checkbox_wrapp input {
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
 }
 
 .checkbox_wrapp label {
