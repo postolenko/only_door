@@ -703,6 +703,17 @@ textarea:focus {
     background-repeat: no-repeat;
 }
 
+.free-delivery-2_icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 76px;
+    height: 113px;
+    background-image: url(img/free_delivery_2_icon.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .vk {
     display: inline-block;
     vertical-align: top;
@@ -3656,6 +3667,12 @@ p.green {
 /*-- /Section 4 - Card Page --*/
 
 /*-- Section 1 - Card 2 Page --*/
+
+.slider-header .free {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
 
 .delivery-descript > img {
     width: 100%;
