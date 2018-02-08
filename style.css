@@ -3334,6 +3334,7 @@ p.green {
 .checkbox-2 input {
     width: 1px;
     height: 1px;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
