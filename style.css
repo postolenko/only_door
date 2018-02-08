@@ -2951,7 +2951,7 @@ p.green {
 }
 
 .card-templ h2 {
-    padding-bottom: 5px;
+    padding: 8px 0 5px 0;
     font-size: 25px;
     line-height: 28px;
     color: #212121;
@@ -3474,6 +3474,7 @@ p.green {
 
 .select_wrapp {
     /*margin: 10px 0;*/
+    padding: 0 0 10px 0;
 }
 
 .select_wrapp label {
