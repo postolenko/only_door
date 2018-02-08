@@ -50,7 +50,7 @@ $(document).ready(function() {
         arrows: true,
         // autoplay: true,
         autoplaySpeed: 10000,
-        speed: 600,
+        speed: 500,
         slidesToShow: 1,
         fade: true,
         asNavFor: '.card-slider-miniatures'
