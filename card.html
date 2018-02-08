@@ -13,15 +13,19 @@
 	<link rel="stylesheet" type="text/css" href="ionicons.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
+	<script type="text/javascript" src="vendors/js/select2.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
 	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Only Door</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -405,147 +409,372 @@
 		<!-- Content -->
 			<div class="content">
 
-				<!-- Section 1 -->
+				<!-- Breadcrumbs -->
+
+				<div class="breadcrumbs_wrapp">
+					<div class="row">
+						<ul class="breadcrumbs">
+							<li><a href="#">Главная страница</a></li>
+							<li><a href="#">Входные двери</a></li>
+							<li><a href="#">Двери в квартиру</a></li>
+							<li><a href="#">Люксор ЛУ-27</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- /Breadcrumbs -->
+
+				<!-- Section 1 - Card Page -->
 
 				<section>
-					
 					<div class="row">
-						<div class="thumbnails_wrapp">
-							<div class="thumbnails_1 offset-ziro set_height">
-								<div class="thumb_1 thumb">
-									<div class="inner thumb_1_1">
-										<div class="col-1">
-											<!-- <img src="img/thumb_1_1.png" alt="" /> -->
+						<div class="card-templ clearfix">
+							<div class="col-1 left">
+								<div class="card-slider_wrapp">
+									<div class="slider-header">
+										<i class="free-delivery_icon"></i>
+										<div class="pink-pill">Скидка</div>
+									</div>
+									<div class="card-slider-big">
+										<div class="slide">
+											<img src="img/card_slider/good_01.png" alt="" />
 										</div>
-										<div class="col-2">
-											<p class="p-1">Мы на рынке с 2008 года</p>
-											<p>Наши цены приемлемы и оправданы!</p>
+										<div class="slide">
+											<img src="img/card_slider/good_02.png" alt="" />
+										</div>
+									</div>
+									<div class="card-slider-miniatures_wrapp">
+										<div class="card-slider-miniatures">
+											<div class="slide">
+												<img src="img/card_slider_miniatures/good_01.png" alt="" />
+											</div>
+											<div class="slide">
+												<img src="img/card_slider_miniatures/good_02.png" alt="" />
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="thumb_1 grey thumb">
-									<div class="inner thumb_1_2">
-										<div class="col-1">
-											<img src="img/worker.png" alt="" />
+								<div class="delivery-descript">
+									<div class="thumbnails_wrapp">
+										<div class="thumbnails_1 thumbnails_1_1 offset-ziro set_height">
+											<div class="thumb_1 grey thumb">
+												<div class="inner thumb_1_2">
+													<div class="col-1">
+														<img src="img/worker_3.png" alt="" />
+													</div>
+													<div class="col-2">
+														<p class="p-1">Беслатный вызов замерщика</p>
+														<p><a href="#" class="show_popup" data-show-popup = "popup_3">Заказать замер</a></p>
+													</div>
+												</div>
+											</div>
+											<div class="thumb_1 thumb_1_4 grey-light thumb">
+												<div class="inner">
+													<div class="col-1">
+														<img src="img/car.png" alt="" />
+													</div>
+													<div class="col-2">
+														<p class="p-1">Доставим эту дверь и установим ее за 7 дней</p>
+														<p><a href="#" class="show_popup" data-show-popup = "popup_3">О доставке и оплате</a></p>
+													</div>
+												</div>
+											</div>
 										</div>
-										<div class="col-2">
-											<p class="p-1">Беслатный вызов замерщика</p>
-											<p><a href="#" class="show_popup" data-show-popup = "popup_3">Заказать замер</a></p>
+									</div>
+									<h4>Характеристики:</h4>
+									<div class="table">
+										<div class="table-row">
+											<div class="table-cell">
+												<p>Наличие</p>
+											</div>
+											<div class="table-cell">
+												<p class="green">В наличии</p>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-cell">
+												<p>Погонаж</p>
+											</div>
+											<div class="table-cell">
+												<p>Телескопический</p>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-cell">
+												<p>Тип двери</p>
+											</div>
+											<div class="table-cell">
+												<p>Глухая</p>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-cell">
+												<p>Покрытие</p>
+											</div>
+											<div class="table-cell">
+												<p>Экошпон</p>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-cell">
+												<p>Торговая марка</p>
+											</div>
+											<div class="table-cell">
+												<p>STATUS</p>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-cell">
+												<p>Стиль</p>
+											</div>
+											<div class="table-cell">
+												<p>Классика</p>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-cell">
+												<p>Цвет</p>
+											</div>
+											<div class="table-cell">
+												<p>Анегри</p>
+											</div>
+										</div>
+									</div>
+									<h4>Описание модели:</h4>
+									<p>Межкомнатные двери Status Classic модель 511 созданы специально для любителей классики. Благодаря элегантному декору и традиционной расцветке они хорошо сочетаются с интерьерами в стиле модерн, арт-деко, классицизм, кантри, эклектика и многими другими.</p>
+
+									<p>Экошпон, покрывающий дверное полотно, имитирует фактуру и рисунок ценных пород древесины, поэтому двери Статус Classik выглядят солидно и дорого. Благодаря современному шпонированному покрытию они не боятся влаги, сохраняют насыщенность цвета и подходят для мытья бытовой химией – поэтому их можно устанавливать даже в помещениях с повышенной влажностью.</p>
+								</div>
+							</div>
+							<div class="col-2 right">
+								<div class="card-inner">
+									<form>
+										<div class="card-row_inner">
+											<div class="card-header card-row">
+												<h2>Люксор ЛУ-27, Орех</h2>
+												<div class="card-header-desc clearfix">
+													<div class="col-1 left">
+														<p class="green">Есть в наличие</p>
+													</div>
+													<div class="col-2 right">
+														<p class="guaranty">Гарантия год!</p>
+													</div>
+												</div>
+											</div>
+											<div class="prices-box card-row">
+												<div class="clearfix">
+													<div class="col-1 left">
+														<h3>Цена за полотно:</h3>
+														<p class="price">22 970 руб</p>
+														<div>
+															<p class="old-price">32 075 руб</p>
+														</div>
+													</div>
+													<div class="col-2 right">
+														<h3>Полный комплект:</h3>
+														<p class="price">24 970 руб</p>
+														<p>с коробкой и наличниками</p>
+													</div>
+												</div>
+												<div class="tooltip">
+													<p>Нашли цену дешевле этой?</p>
+													<p><a href="#">Желаете поторговаться?</a></p>
+												</div>
+											</div>										
+											<div class="card-row">
+												<h3>Количество:</h3>
+												<div class="inline-elems">
+													<div class="col">
+														<div class="count-box">
+															<button type="button" class="minus-btn"></button>
+															<div class="count-num">
+																<input type="number" placeholder="1" />
+															</div>
+															<button type="button" class="plus-btn"></button>
+														</div>
+													</div>
+													<div class="col">
+														<button type="submit" class="green-btn">В корзину</button>
+													</div>
+													<div class="col">
+														<button type="button" class="red-pill">Купить в 1 клик</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-row two-cols">
+											<div class="clearfix">
+												<div class="col-1 left">
+													<ol>
+														<li>Оплата при получении или самовывозом</li>
+														<li>Доставка по Московсокй области</li>
+													</ol>
+												</div>
+												<div class="col-2 right">
+													<p><a href="#">О доставке и оплате</a></p>
+												</div>
+											</div>
+										</div>
+										<div class="card-row two-cols_2 border-none">
+											<div class="two-cols_2 clearfix">
+												<div class="col-1 left">
+													<h4>Тип полотна:</h4>
+													<div class="card-checkboxes">
+														<div class="checkbox-2">
+															<input type="checkbox" id="ch_2" name="card_ch">
+															<label for="ch_2">Глухое</label>
+														</div>
+														<div class="checkbox-2">
+															<input type="checkbox" id="ch_3" name="card_ch">
+															<label for="ch_3">Со стеклом</label>
+														</div>
+													</div>
+												</div>
+												<div class="col-2 right">
+													<h4>Остекление:</h4>
+													<div class="radio_wrapp">
+														<div class="radio-color">
+															<input type="radio" id="radio_1" name="card_radio_1">
+															<label for="radio_1" style="background-color: #9a6a4f;"></label>
+														</div>
+														<div class="radio-color">
+															<input type="radio" id="radio_2" name="card_radio_1">
+															<label for="radio_2" style="background-color: #65402c;"></label>
+														</div>
+														<div class="radio-color">
+															<input type="radio" id="radio_3" name="card_radio_1">
+															<label for="radio_3" style="background-color: #d9d3d3;"></label>
+														</div>
+														<div class="radio-color">
+															<input type="radio" id="radio_4" name="card_radio_1">
+															<label for="radio_4" style="background-color: #ebdcdc;"></label>
+														</div>
+														<div class="radio-color">
+															<input type="radio" id="radio_5" name="card_radio_1">
+															<label for="radio_5" style="background-color: #ebdcdc;"></label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div>
+												<h4>Цвет:</h4>
+												<div class="radio_wrapp">
+													<div class="radio-color">
+														<input type="radio" id="radio_6" name="card_radio_2">
+														<label for="radio_6" style="background-color: #9a6a4f;"></label>
+													</div>
+													<div class="radio-color">
+														<input type="radio" id="radio_7" name="card_radio_2">
+														<label for="radio_7" style="background-color: #65402c;"></label>
+													</div>
+													<div class="radio-color">
+														<input type="radio" id="radio_8" name="card_radio_2">
+														<label for="radio_8" style="background-color: #d9d3d3;"></label>
+													</div>
+													<div class="radio-color">
+														<input type="radio" id="radio_9" name="card_radio_2">
+														<label for="radio_9" style="background-color: #ebdcdc;"></label>
+													</div>
+													<div class="radio-color">
+														<input type="radio" id="radio_10" name="card_radio_2">
+														<label for="radio_10" style="background-color: #ebdcdc;"></label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-row two-cols_3">
+											<div class="clearfix">
+												<div class="col left">
+													<div class="select_wrapp">
+														<label>Размер полотна, мм:</label>
+														<div class="select-box">
+															<select data-placeholder="Выберите необходимое">
+																<option></option>
+																<option>600 х 2000</option>
+																<option>700 х 2000</option>
+																<option>800 х 2000</option>
+																<option>900 х 2000</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col right">
+													<div class="select_wrapp">
+														<label>Доборы:</label>
+														<div class="select-box">
+															<select data-placeholder="Выберите необходимое">
+																<option></option>
+																<option>Пункт 1</option>
+																<option>Пункт 2</option>
+																<option>Пункт 3</option>
+																<option>Пункт 4</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="card-inner">
+									<div class="card-row">
+										<div class="soc-links_wrapp">
+											<p>Поделиться в соц сетях:</p>
+											<ul class="soc-list">
+												<li><a href="#"><i class="vk"></i></a></li>
+												<li><a href="#"><i class="twitter"></i></a></li>
+												<li><a href="#"><i class="facebook"></i></a></li>
+											</ul>
 										</div>
 									</div>
 								</div>
-								<div class="thumb_1 green thumb">
-									<div class="inner">
-										<div class="col-1">
-											<img src="img/thumb_1_3_img.png" alt="" />
+								<div class="card-inner">
+									<div class="card-row advertisements">
+										<h3>Почему выгодно покупать двери у нас:</h3>
+										<div class="advertisement-item">
+											<div class="col-1">
+												<p>01.</p>
+											</div>
+											<div class="col-2">
+												<h3>Гарантия 1 год</h3>
+												<p>Мы работаем с производителями напрямую, благодаря чему можем оперативно реагировать на любые заявки по гарантийным обязательствам.</p>
+											</div>
 										</div>
-										<div class="col-2">
-											<p class="p-1">Год гарантии на всю продукцию</p>
-											<p>У нас продукция высокого качества!</p>
+										<div class="advertisement-item">
+											<div class="col-1">
+												<p>02.</p>
+											</div>
+											<div class="col-2">
+												<h3>Возможна оплата при получении</h3>
+												<p>Заказываете дверь и оплачиваете ее стоимость при получении. Также возможен вариант самовывоза из нашего магазина</p>
+											</div>
+										</div>
+										<div class="advertisement-item">
+											<div class="col-1">
+												<p>03.</p>
+											</div>
+											<div class="col-2">
+												<h3>Приемлемые цены</h3>
+												<p>Все двери приобретены у производятеля на прямую. Поэтому мы устанавливаем приемлемые цены без накруток</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</section>
 
-				<!-- /Section 1 -->
+				<!-- /Section 1 - Card Page -->
 
-				<!-- Section 2 -->
+				<!-- Section 2 - Card Page -->
 
-				<section class="slider_1-section">
+				<section>
 					<div class="row">
-						<div class="header-h2 links-box">						
-							<h2>Популярные товары</h2>
-							<a href="#" class="more-link">Показать все товары</a>
+						<div class="header-h2">						
+							<h2>Похожие товары</h2>
 						</div>
-					</div>
-					<div class="slider_1_wrapp">
-						<div class="row">
-							<div class="slider_1">
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Люксор ЛУ-27, Венге</a></p>
-											<p>Экошпон, С элементами стекла</p>
-										</div>
-										<div class="thumb_2_footer">
-											<p class="price">28 970 руб</p>
-											<p class="old-price">32 075 руб</p>
-										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_01.png" alt="">
-									</div>
-								</div>
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Лабиринт ALFA 04 -<br /> Беленый дуб</a></p>
-											<p>Экошпон, С элементами стекла Вторая строчка</p>
-										</div>
-										<div class="thumb_2_footer">
-											<p class="price">22 970 руб</p>
-											<!-- <p class="old-price">32 075 руб</p> -->
-										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_02.png" alt="">
-									</div>
-								</div>
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Люксор ЛУ-27, Венге</a></p>
-											<p>Экошпон, С элементами стекла</p>
-										</div>
-										<div class="thumb_2_footer">
-											<p class="price">28 970 руб</p>
-											<p class="old-price">32 075 руб</p>
-										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_01.png" alt="">
-									</div>
-								</div>
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Лабиринт ALFA 04 -<br /> Беленый дуб</a></p>
-											<p>Экошпон, С элементами стекла Вторая строчка</p>
-										</div>
-										<div class="thumb_2_footer">
-											<p class="price">22 970 руб</p>
-											<!-- <p class="old-price">32 075 руб</p> -->
-										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_02.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- /Section 2 -->
-
-				<!-- Section 3 -->
-
-				<section class="section-3">
-
-					<div class="row">
-						<div class="header-h2 links-box">
-							<h2>Последние поступления</h2>
-							<p><a href="#" class="more-link">Показать все новинки</a></p>
-						</div>
-						<div class="thumbnails_3 offset-ziro">
+						<div class="slider-3">
 							<div class="thumb_3">
 								<a href="#" class="inner">
 									<div class="blue-pill">Хит</div>
@@ -746,71 +975,54 @@
 							</div>
 						</div>
 					</div>
-
 				</section>
 
-				<!-- /Section 3 -->
+				<!-- /Section 2 - Card Page -->
 
-				<!-- Section 4 -->
+				<!-- Section 4 - Card Page -->
 
-				<section class="section-4">
+				<section class="section-4 section-4_card">
 					<div class="row">
-						<div class="header-h2">
-							<h2>Профессиональный монтаж дверных систем</h2>
+						<div class="header-h2 light">
+							<h2>Бесплатная помощь с выбором дверей!</h2>
+							<p>Оставьте свои контакты и наш менеджер свяжется с Вами, чтобы определиться с выбором</p>
 						</div>
-						<div class="thumbnails_wrapp">
-							<div class="thumbnails_4 offset-ziro">
-								<div class="thumb_4">
-									<div class="col-1">
-										<p class="num">01</p>
+						<form>
+							<div class="form-inputs_wrapp">
+								<div class="inner offset-ziro">
+									<div class="input-field">
+										<input type="text" placeholder="Ваше имя">
+										<i class="user"></i>
 									</div>
-									<div class="col-2">
-										<p class="p-1">Низкая стоимость услуг</p>
-										<p>Которая сочетается с высоким качеством исполнения</p>
+									<div class="input-field">
+										<input type="tel" placeholder="Ваш телефон">
+										<i class="phone"></i>
 									</div>
-								</div>
-								<div class="thumb_4">
-									<div class="col-1">
-										<p class="num">02</p>
-									</div>
-									<div class="col-2">
-										<p class="p-1">Только мастера своего дела</p>
-										<p>Наши сотрудники выполняют даже самые сложные работы.</p>
-									</div>
-								</div>
-								<div class="thumb_4">
-									<div class="col-1">
-										<p class="num">03</p>
-									</div>
-									<div class="col-2">
-										<p class="p-1">Один год гарантии</p>
-										<p>Монтаж ваших дверей  будет выполнен наилучшим образом</p>
+									<div class="input-field">
+										<input type="tel" placeholder="Ваш E-mail">
+										<i class="at"></i>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="red-pill_wrapp">
-							<button type="button" class="red-pill show_popup" data-show-popup = "popup_3">Бесплатный замер</button>
-						</div>
+							<div class="red-pill_wrapp">
+								<button type="submit" class="red-pill">Бесплатный замер</button>
+							</div>
+						</form>
 					</div>
 				</section>
 
-				<!-- /Section 4 -->
+				<!-- /Section 4 - Card Page -->
 
 				<!-- Section 5 -->
 
 				<section class="section-5">
 					<div class="row">
-						<div class="header-h2 links-box">
-							<div class="slider-2_arrows clearfix"></div>
-							<div>
-								<h2>Отзывы наших клиентов</h2>
-								<p>Отзывы клиентов - лучший показатель качества наших услуг</p>
-							</div>
-							<a href="#" class="more-link">Показать все товары</a>
+						<div class="header-h2">
+							<h2>Отзывы наших клиентов</h2>
+							<p>Отзывы клиентов - лучший показатель качества наших услуг</p>
 						</div>
 						<div class="slider-2_wrapp">
-							<div class="slider-2 slider_2">
+							<div class="slider-2 slider_2_2">
 								<div class="testimonial">
 									<div class="inner">
 										<div class="testimonial-header">
@@ -883,147 +1095,6 @@
 				</section>
 
 				<!-- /Section 5 -->
-
-				<!-- Section 6 -->
-
-				<section class="section-6">
-					<div class="row">
-						<div class="two-cols-templ clearfix">
-							<div class="shape_circle"></div>
-							<div class="col-1 left">
-								<h3>Не решаетесь сделать заказ через Интернет?</h3>
-								<p>Приезжайте к нам в салон дверей, чтобы купить дверь напрямую</p>
-							</div>
-							<div class="col-2 right">
-								<div class="green-circle">
-									<i class="map-marker-white"></i>
-								</div>
-								<div class="col-2-col col-2-col-1">
-									<p>г.Москва м.Бибирево ул. Пришвина 26, секция D 39/1, ТВЦ «Миллион Мелочей»</p>
-								</div>
-								<div class="col-2-col col-2-col-2">
-									<a href="#" class="red-pill">Посмотреть на карте</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- /Section 6 -->
-
-				<!-- Section 7 -->
-
-				<section class="section-7">
-					<div class="row">
-						<div class="header-h2 links-box">
-							<h2>Полезные статьи и новости компании</h2>
-							<a href="#" class="more-link">Показать все товары</a>
-						</div>
-						<div class="thumbnails_wrapp">
-							<div class="thumbnails_5 offset-ziro">
-								<div class="thumb_5">
-									<a href="#" class="inner">
-										<div class="img-box">
-											<div class="green-arrow_box"></div>
-											<img src="img/good_11.jpg" alt="" />
-										</div>
-										<div class="thumb-content">
-											<div class="thumb-header">
-												<p class="date">08 ноября 2017</p>
-												<p>Двери измассива: плюсы, минусы</p>
-											</div>
-											<div class="descript">
-												<p>Двери из массива – это классический вариант, который остается актуальным во все времена, возможно, их продажи и уступили...</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="thumb_5">
-									<a href="#" class="inner">
-										<div class="img-box">
-											<div class="green-arrow_box"></div>
-											<img src="img/good_12.jpg" alt="" />
-										</div>
-										<div class="thumb-content">
-											<div class="thumb-header">
-												<p class="date">08 ноября 2017</p>
-												<p>Меняем облик квартиры с помощью дверей</p>
-											</div>
-											<div class="descript">
-												<p>Задумывались ли вы над тем, какую роль играют двери в интерьере дома или квартиры? На самом деле, — одну из ключевых роле играет...</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="thumb_5">
-									<a href="#" class="inner">
-										<div class="img-box">
-											<div class="green-arrow_box"></div>
-											<img src="img/good_13.jpg" alt="" />
-										</div>
-										<div class="thumb-content">
-											<div class="thumb-header">
-												<p class="date">08 ноября 2017</p>
-												<p>Как выбрать двери для дачи</p>
-											</div>
-											<div class="descript">
-												<p>Вы счастливчик, если у вас есть дачный участок за городом. В любое удобное для вас время вы можете отправиться туда и отдохнуть от городской</p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="thumb_5">
-									<a href="#" class="inner">
-										<div class="img-box">
-											<div class="green-arrow_box"></div>
-											<img src="img/good_14.jpg" alt="" />
-										</div>
-										<div class="thumb-content">
-											<div class="thumb-header">
-												<p class="date">08 ноября 2017</p>
-												<p>Двери измассива: плюсы, минусы</p>
-											</div>
-											<div class="descript">
-												<p>Двери из массива – это классический вариант, который остается актуальным во все времена, возможно, их продажи и уступили...</p>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- /Section 7 -->
-
-				<!-- Section 8 -->
-
-				<section class="section-8">
-					<div class="row">
-						<div class="header-h2">
-							<h2>OnlyDoor - магазин дверей в Москве</h2>
-						</div>
-						<div class="scroll-box">
-							<p>Несмотря на обилие крупных компаний и маленьких фирм, предлагающих своим покупателям купить двери, рядовому покупателю сделать свой выбор бывает непросто. Возникает ряд вопросов: как выбрать недорогие двери, не жертвуя качеством, на что обратить внимание при заказе, какому производителю доверять и тому подобное. И здесь очень важно не ошибиться, ведь входные двери – это не просто аксессуар, а защита от злоумышленников и гарант вашей безопасности. Если хотите выбрать лучшее, тогда ассортимент Onlydoor.ru – именно для вас.</p>
-
-							<p>За время работы нам удалось наладить партнерские отношения с ведущими отечественными и зарубежными производителями: Dariano Porte, LUXOR, Profil Doors и десятками других. Всю продукцию мы получаем исключительно напрямую от компаний-производителей, не работаем с посредниками и перекупщиками, тем самым гарантируя своим клиентам лучшую цену.</p>
-
-							<p>Выбирая нашу продукцию, вы получаете уверенность в своем решении. Уникальный дизайн, бескомпромиссная долговечность и просто огромный выбор – все это в онлайн-каталоге нашего интернет-магазина.</p>
-
-							<p>Разумеется, мы никогда не останавливаемся на достигнутом. Для нас важно постоянно расширять ассортимент продукции и предлагать своим покупателям то, чего нет в других торговых площадках.</p>
-
-							<p>Несмотря на обилие крупных компаний и маленьких фирм, предлагающих своим покупателям купить двери, рядовому покупателю сделать свой выбор бывает непросто. Возникает ряд вопросов: как выбрать недорогие двери, не жертвуя качеством, на что обратить внимание при заказе, какому производителю доверять и тому подобное. И здесь очень важно не ошибиться, ведь входные двери – это не просто аксессуар, а защита от злоумышленников и гарант вашей безопасности. Если хотите выбрать лучшее, тогда ассортимент Onlydoor.ru – именно для вас.</p>
-
-							<p>За время работы нам удалось наладить партнерские отношения с ведущими отечественными и зарубежными производителями: Dariano Porte, LUXOR, Profil Doors и десятками других. Всю продукцию мы получаем исключительно напрямую от компаний-производителей, не работаем с посредниками и перекупщиками, тем самым гарантируя своим клиентам лучшую цену.</p>
-
-							<p>Выбирая нашу продукцию, вы получаете уверенность в своем решении. Уникальный дизайн, бескомпромиссная долговечность и просто огромный выбор – все это в онлайн-каталоге нашего интернет-магазина.</p>
-
-							<p>Разумеется, мы никогда не останавливаемся на достигнутом. Для нас важно постоянно расширять ассортимент продукции и предлагать своим покупателям то, чего нет в других торговых площадках.</p>
-						</div>
-					</div>
-				</section>
-
-				<!-- /Section 8 -->
 
 			</div>
 		<!-- /Content -->
@@ -1109,6 +1180,7 @@
 
 		<script src="js/scripts.js"></script>
 		<script src="js/additional_scripts.js"></script>
+		<script src="js/map.js"></script>
 	
 	</div>
 

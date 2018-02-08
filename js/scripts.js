@@ -31,6 +31,8 @@ $(window).load(function() {
 
     getTHumbsHeight();
 
+    getSelectWidth();
+
     $(".num-mark").each(function() {
 
         itemNum = 0;
@@ -52,6 +54,8 @@ $(document).ready(function() {
     $(window).resize(function() {
 
         getCustomizeParams();
+
+        getSelectWidth();
 
         // ------------------
         $(".set_height .thumb .inner").css({"height" : "auto"});
@@ -168,13 +172,51 @@ $(document).ready(function() {
 
     });
 
-    $(".top_btn").click(function(e) {
+    $(function() {
 
-        e.preventDefault();
+        $(".top_btn").click(function(e) {
 
-        $("html, body").animate({
-            scrollTop: 0
-        }, 700);
+            e.preventDefault();
+
+            $("html, body").animate({
+                scrollTop: 0
+            }, 700);
+
+        });
+
+    });
+
+    $(function() {
+
+        $(".count-box button").click(function(e) {
+
+            e.preventDefault();
+
+            parentBlock= $(this).closest(".count-box");
+
+            var countInput = parentBlock.find(".count-num input");
+
+            var countVal = countInput.val();
+
+            if(countVal == "") {
+
+                countVal = 1;
+
+            }
+
+            if( $(this).hasClass("minus-btn") && countVal > 1 ) {
+
+                countVal--;
+
+            } else if( $(this).hasClass("plus-btn")) {
+
+                countVal++;
+
+            }
+
+            countInput.val(countVal);
+
+        });
 
     });
 
@@ -213,7 +255,23 @@ function getTHumbsHeight() {
 
         thumb.find(".inner").height(maxThumbHeight);
 
-        console.log(maxThumbHeight);
+    });
+
+}
+
+function getSelectWidth() {
+
+    $("select").each(function() {
+
+        var parentBlock = $(this).closest(".select_wrapp");
+
+        parentBlock.find(".select2-container").css({
+            "width" : "auto"
+        });
+
+        parentBlock.find(".select2-container").css({
+            "width" : parentBlock.width() + "px"
+        });
 
     });
 
