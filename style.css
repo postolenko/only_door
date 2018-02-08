@@ -3031,6 +3031,9 @@ p.green {
 }
 
 .prices-box p {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 24px 0 0;
     padding: 3px 0;
     font-size: 13px;
     line-height: 25px;
@@ -3046,8 +3049,6 @@ p.green {
 }
 
 .prices-box p.old-price {
-    display: inline-block;
-    vertical-align: top;
     position: relative;
     font-size: 14px;
     line-height: 25px;
@@ -3659,12 +3660,6 @@ p.green {
 .delivery-descript > img {
     width: 100%;
     margin: 11px 0 9px 0;
-}
-
-.prices-box_single p {
-    display: inline-block;
-    vertical-align: baseline !important;
-    margin: 5px 24px 5px 0;
 }
 
 /*-- /Section 1 - Card 2 Page --*/
