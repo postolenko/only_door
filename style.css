@@ -3654,6 +3654,21 @@ p.green {
 
 /*-- /Section 4 - Card Page --*/
 
+/*-- Section 1 - Card 2 Page --*/
+
+.delivery-descript > img {
+    width: 100%;
+    margin: 11px 0 9px 0;
+}
+
+.prices-box_single p {
+    display: inline-block;
+    vertical-align: baseline !important;
+    margin: 5px 24px 5px 0;
+}
+
+/*-- /Section 1 - Card 2 Page --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
