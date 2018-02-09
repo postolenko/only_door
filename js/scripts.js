@@ -220,6 +220,123 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".sidebar-box").each(function() {
+
+            $(this).find(".slide-box").each(function() {
+
+                parentBlock = $(this).closest(".sidebar-box");
+
+                if( $(this).is(":visible") ) {
+
+                    parentBlock.addClass("visible");
+
+                } else {
+
+                    parentBlock.removeClass("visible");
+
+                }
+
+            });
+
+        });
+
+        $(".sidebar-box").each(function() {
+
+            $(this).find(".slide-box").each(function() {
+
+                parentBlock = $(this).closest(".sidebar-box");
+
+                if( parentBlock.hasClass("visible") ) {
+
+                    parentBlock.slideDown(300);
+
+                } else {
+
+                    parentBlock.slideUp(300);
+
+                }
+
+            });
+
+        });
+
+
+        $(".sidebar-box .slide-btn").click(function(e) {
+
+            parentBlock = $(this).closest(".sidebar-box");
+
+            var slideBox = parentBlock.find(".slide-box");
+
+            if( slideBox.is(":hidden") ) {
+
+                slideBox.slideDown(300);
+                parentBlock.addClass("visible");
+
+            } else {
+
+                slideBox.slideUp(300);
+                parentBlock.removeClass("visible");
+
+            }
+
+        });
+
+        var nav2BtnTempl = "<button type='button' class='nav-2-btn'></button>";
+
+        $(".nav-2").each(function() {
+
+            $(this).find("li").each(function() {
+
+                if( $(this).find("ol").length > 0 ) {
+
+                    $(this).prepend(nav2BtnTempl);
+
+                }
+
+            });
+
+        });
+
+        $(".nav-2 .nav-2-btn").click(function(e) {
+
+            e.preventDefault();
+
+            parentBlock = $(this).closest("li");
+
+            var innerNav = parentBlock.children("ol");
+
+            if( innerNav.is(":hidden") ) {
+
+                innerNav.slideDown(300);
+                parentBlock.addClass("active");
+
+            } else {
+
+                innerNav.slideUp(300);
+                parentBlock.removeClass("active");
+
+            }
+
+        });
+
+    });
+
+    $(function() {
+
+        $(".close-tag").click(function(e) {
+
+            e.preventDefault();
+
+            parentBlock = $(this).closest(".tag");
+
+            parentBlock.fadeOut(300);
+
+        });
+
+    });
+
 });
 
 function getCustomizeParams() {
