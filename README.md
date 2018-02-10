@@ -5,3 +5,4 @@
 # http://postolenko.github.io/only_door/card_2.html
 # http://postolenko.github.io/only_door/card_3.html
 # http://postolenko.github.io/only_door/catalog.html
+# http://postolenko.github.io/only_door/articles_catalog.html
