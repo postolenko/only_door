@@ -337,6 +337,28 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".articles-thumbnails").each(function() {
+
+            var thumb = $(this).find(".article-thumb");
+
+            thumb.each(function() {
+
+                var indexThumb = $(this).index(".article-thumb");
+
+                if( indexThumb%5 == 0 ) {
+
+                    $(this).addClass("five");
+
+                }
+
+            });
+
+        });
+
+    });
+
 });
 
 function getCustomizeParams() {

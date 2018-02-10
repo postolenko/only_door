@@ -4408,6 +4408,226 @@ a.pagination-arrow:hover i {
 
 /*-- Section 2 - Catalog Page --*/
 
+/*-- Section 1 - Articles Catalog Page --*/
+
+.catalog-header_2 {
+    padding: 0;
+    background: none;
+}
+
+.radio_wrap {
+    margin: 0 -3px 0 0;
+}
+
+.radio-4 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    min-width: 71px;
+    margin: 5px 3px;
+}
+
+.radio-4 input {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.radio-4 label {
+    display: block;
+    cursor: pointer;
+    background: #f5f5f5;
+    padding: 8px 13px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    color: #212121;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.radio-4 input:checked +  label {
+    background: #1ba91d;
+    color: #ffffff;
+}
+
+.articles-thumbnails {
+    margin: 10px -15px;
+    padding: 0 0 14px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.article-thumb {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.article-thumb .inner {
+    display: block;
+    height: 460px;
+}
+
+.article-thumb .img-box {
+    height: 220px;
+    overflow: hidden;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.article-thumb .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.article-thumb .descript {
+    height: 240px;
+    padding: 5px 20px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.article-thumb p {
+    padding: 5px 0;
+    font-size: 13px;
+    line-height: 23px;
+    color: #5e5e5e;
+}
+
+.article-thumb p.date {
+    font-size: 13px;
+    line-height: 24px;
+    color: #18812a;
+}
+
+.article-thumb p.p-1 {
+    padding: 0 0 8px 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.article-thumb p.p-1 span {
+    border-bottom: 1px solid #96989f;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.article-thumb .inner:link p.p-1 span,
+.article-thumb .inner:visited p.p-1 span {
+    border-bottom: 1px solid #96989f;
+}
+
+.article-thumb .inner:active p.p-1 span,
+.article-thumb .inner.active p.p-1 span {
+    border-bottom: 1px solid transparent;
+}
+
+.article-thumb .inner:hover p.p-1 span {
+    border-bottom: 1px solid transparent;
+}
+
+.article-thumb:nth-child(1) {
+    width: 66.66%;
+}
+
+.article-thumb:nth-child(1) .inner {
+    position: relative;
+}
+
+.article-thumb:nth-child(1) .img-box {
+    height: 460px;
+}
+
+.article-thumb:nth-child(1) .descript {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+
+.article-thumb.five:nth-child(odd) {
+    width: 66.66%;
+}
+
+.article-thumb.five:nth-child(odd) .inner {
+    position: relative;
+}
+
+.article-thumb.five:nth-child(odd) .img-box {
+    height: 460px;
+}
+
+.article-thumb.five:nth-child(odd) .descript {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+
+.article-thumb.five:nth-child(even) + .article-thumb {
+    width: 66.66%;
+}
+
+.article-thumb.five:nth-child(even) + .article-thumb .inner {
+    position: relative;
+}
+
+.article-thumb.five:nth-child(even) + .article-thumb .img-box {
+    height: 460px;
+}
+
+.article-thumb.five:nth-child(even) + .article-thumb .descript {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+
+.pagination_2 {
+    margin-bottom: 38px;
+}
+
+/*-- /Section 1 - Articles Catalog Page --*/
+
 
 
 
