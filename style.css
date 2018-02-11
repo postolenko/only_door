@@ -5035,6 +5035,18 @@ p.sum-price {
     font-weight: normal;
 }
 
+.basket-form input,
+.basket-form textarea {
+    font-weight: normal;
+    color: #5e5e5e;
+}
+
+.basket-form input::placeholder,
+.basket-form textarea::placeholder {
+    font-weight: normal;
+    color: #5e5e5e;
+}
+
 .radio-5_wrapp {
     margin: 0 -1%;
 }
