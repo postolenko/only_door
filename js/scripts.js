@@ -359,6 +359,12 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+
+
+    });
+
 });
 
 function getCustomizeParams() {
@@ -415,3 +421,29 @@ function getSelectWidth() {
     });
 
 }
+
+// getSumPrice();
+
+// function getSumPrice() {
+
+//     var priceTotal;
+//     // var basketTable;
+//     var sumPriceNum = 0;
+
+//     $(".basket-table").find(".price-total").each( function(){
+
+//         // basketTable = $(this).closest(".basket-table");
+
+//         priceTotal = parseInt( $(this).find(".price-total-num").text() );
+
+//         sumPriceNum += priceTotal;
+
+//         console.log(sumPriceNum);
+        
+//     });
+
+//     $(".sum-price-num").html(sumPriceNum);
+
+    
+
+// }

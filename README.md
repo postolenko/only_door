@@ -7,3 +7,4 @@
 # http://postolenko.github.io/only_door/catalog.html
 # http://postolenko.github.io/only_door/articles_catalog.html
 # http://postolenko.github.io/only_door/basket.html
+# http://postolenko.github.io/only_door/about.html

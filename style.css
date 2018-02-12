@@ -591,6 +591,7 @@ textarea:focus {
     margin: 15px 0;
     padding: 11px 28px;
     cursor: pointer;
+    text-align: center;
     background: #ff4e4e;
     font-size: 14px;
     line-height: 20px;
@@ -615,6 +616,40 @@ textarea:focus {
 
 .red-pill:hover {
     background: #f04040;
+    color: #ffffff;
+}
+
+.green-pill {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 130px;
+    margin: 10px 0;
+    padding: 10px 1%;
+    background: #139b2a;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.green-pill:link,
+.green-pill:visited {
+    background: #139b2a;
+    color: #ffffff;
+}
+
+.green-pill:active,
+.green-pill.active {
+    background: #1aa832;
+    color: #ffffff;
+}
+
+.green-pill:hover {
+    background: #1aa832;
     color: #ffffff;
 }
 
@@ -5211,10 +5246,341 @@ p.sum-price {
 
 /*-- /Section 1 - Basket Page --*/
 
+/*-- Section 1 - About Page --*/
+
+.article_2 {        
+    margin: 16px 0 27px 0;
+    padding-bottom: 17px;
+    background-color: #ededed;
+    background-image: url(img/bg_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.article_2 .row {
+    display: table;
+    width: 100%;
+}
+
+.article_2 .col-1 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 42%;
+}
+
+.article_2 .col-2 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 58%;
+}
+
+.article_2 h2 {
+    padding-bottom: 35px;
+    font-size: 30px;
+    line-height: 50px;
+    color: #212121;
+}
+
+.article_2 p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #212121;
+}
+
+.article_2 .col-2 img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    top: -14px;
+    right: -41px;
+}
+
+/*-- /Section 1 - About Page --*/
+
+/*-- Section 2 - About Page --*/
+
+.thumbnails-2 {
+    margin: 0 -40px 17px -40px;
+}
+
+.thumb-2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+.thumb-2 .icon-box {
+    display: block;
+    height: 80px;
+    margin: 0 0 9px 0;
+    text-align: center;
+    position: relative;
+}
+
+.thumb-2 .icon-box img {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    max-width: 98%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    --transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.thumb-2 p {
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: #5e5e5e;
+}
+
+.thumb-2 p.p-1 {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #212121;
+}
+
+/*-- /Section 2 - About Page --*/
+
+/*-- Section 3 - About Page --*/
+
+.two-cols_4 {
+    margin: 38px 0 48px 0;
+}
+
+.two-cols_4 .col-1 {
+    width: 23%;
+}
+
+.two-cols_4 .col-2 {
+    width: 67%;
+}
+
+.single-box {
+    max-width: 170px;
+    margin: 15px 0;
+    padding: 31px 0;
+    border-top: 1px solid #18812a;
+}
+
+.single-box p {
+    padding: 1px 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: italic;
+    color: #5e5e5e;
+}
+
+.single-box .red-pill,
+.single-box .green-pill {
+    min-width: 100%;
+    margin: 42px 0 39px 0;
+}
+
+.article_3 {
+
+}
+
+.article_3 .col-1 {
+    width: 54%;
+    padding: 7px 12px 0 0;
+}
+
+.article_3 .col-2 {
+    width: 46%;
+    padding: 0 0 0 5px;
+}
+
+.article_3 .col-2 img {
+    display: block;
+    width: auto;
+    height: auto;
+    float: right;
+    max-width: 98%;
+}
+
+.article_3 h3 {
+    font-size: 29px;
+    line-height: 40px;
+    color: #212121;
+}
+
+.article_3 p {
+    padding: 11px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: #5e5e5e;
+}
+
+.article_3 p b {
+    color: #212121;
+}
+
+/*-- /Section 3 - About Page --*/
+
+/*-- Section 4 - About Page --*/
+
+.info-box-2_wrapp {
+
+}
+
+.info-box-2 {
+    max-width: 946px;
+    margin: 36px 0;
+    padding: 0 0 0 50px;
+    position: relative;
+}
+
+.info-box-2:before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 93%;
+    background: #18812a;
+    position: absolute;
+    top: 7%;
+    left: 0;
+}
+
+.info-box-2_wrapp .info-box-2 {
+    float: right;
+}
+
+.info-box-2 h2 {
+    padding-bottom: 30px;
+    font-size: 25px;
+    line-height: 38px;
+    color: #212121;
+}
+
+.info-box-2 p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #212121;
+}
+
+/*-- /Section 4 - About Page --*/
+
+/*-- Section 5 - About Page --*/
+
+.two-cols_5 {
+    margin: 21px 0 0 0;
+}
+
+.two-cols_5 .col-1 {
+    width: 75%;
+}
+
+.two-cols_5 .col-2 {
+    width: 25%;
+}
+
+.article_4 {
+    margin: 22px 0 0 0;
+}
+
+.article_4 .col-1 {
+    width: 48%;
+    padding: 0 8px 0 0;
+}
+
+.article_4 .col-2 {
+    width: 52%;
+    padding: 0 0 0 8px;
+}
+
+.article_4 .col-1 img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.article_4 h2 {
+    padding-bottom: 34px;
+    font-size: 29px;
+    line-height: 40px;
+    color: #212121;
+}
+
+.article_4 p {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: #212121;
+}
+
+.two-cols_5 .single-box {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/*-- /Section 5 - About Page --*/
+
+/*-- Section 6 - About Page --*/
+
+.article_5 {
+    margin: 23px 0 42px 0;
+}
+
+.article_5 .col-1 {
+    width: 35%;
+    padding-right: 8px;
+}
+
+.article_5 .col-2 {
+    width: 65%;
+    padding-left: 8px;
+}
+
+.article_5 h2 {
+    padding-bottom: 32px;
+    font-size: 29px;
+    line-height: 40px;
+    color: #212121;
+}
+
+.article_5 p {
+    padding: 11px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: #212121;
+}
+
+.article_5 .green-pill {
+    min-width: 160px;
+}
+
+.article_5 h3 {
+    padding: 10px 0 4px 0;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #212121;
+}
+
+p.green {
+    color: #18812a;
+}
+
+.article_5 .col-1 .green-pill, 
+.article_5 .col-1 .red-pill {
+    margin: 31px 0;
+    padding: 12px 1%;
+}
 
 
-
-
+/*-- /Section 6 - About Page --*/
 
 
 
