@@ -5598,6 +5598,7 @@ p.green {
 .single-article-header p {
     display: inline-block;
     vertical-align: top;
+    margin: 3px 0 5px 0 !important;
     padding: 7px 14px;
 }
 
