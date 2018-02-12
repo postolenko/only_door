@@ -64,6 +64,36 @@ $(document).ready(function() {
         focusOnSelect: true
     });
 
+    var articleSlider = $('.article-slider').slick({
+        dots: false,
+        arrows: true,
+        // autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 500,
+        slidesToShow: 1,
+        fade: true
+    });
+
+    $("[data-slider-count]").each(function() {
+
+        var sliderName = $(this).attr("data-slider-count");
+
+        var slidesLength = $("[data-slider = "+ sliderName +"] .slide").length;
+
+        $(this).find(".slides-length").text(slidesLength);
+
+    });
+
+    articleSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+        var sliderName = $(this).attr("data-slider");
+
+        var currentSlideBox = $("[data-slider-count = "+ sliderName +"] .current-slide");
+
+        currentSlideBox.text(currentSlide + 1);
+
+    });
+
     $("select").select2({
         minimumResultsForSearch: Infinity
     });
