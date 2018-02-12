@@ -12,6 +12,7 @@ var maxThumbHeight;
 var popupName;
 var hide_element;
 var popupBlock;
+var popupTopCoord;
 
 var itemNum;
 
@@ -68,8 +69,16 @@ $(document).ready(function() {
 
             if( $(this).hasClass("active") ) {
 
+                popupTopCoord = ( $(window).height() - popupBlock.find(".popup").outerHeight(true) ) / 2;
+
+                if( popupTopCoord <= 0 ) {
+
+                    popupTopCoord = 10;
+
+                }
+
                 $(this).find(".popup").css({
-                    "margin-top" : ( $(window).height() - popupBlock.find(".popup").outerHeight(true) ) / 2 + "px"
+                    "margin-top" : popupTopCoord + "px"
                 });
 
             }
@@ -97,9 +106,17 @@ $(document).ready(function() {
                     "opacity" : 1
                 }, 400);
 
+                popupTopCoord = ( $(window).height() - popupBlock.find(".popup").outerHeight(true) ) / 2;
+
+                if( popupTopCoord <= 0 ) {
+
+                    popupTopCoord = 10;
+
+                }
+
                 popupBlock.find(".popup").animate({
-                    "margin-top" : ( $(window).height() - popupBlock.find(".popup").outerHeight(true) ) / 2 + "px"
-                }, 400);
+                    "margin-top" : popupTopCoord + "px"
+                }, 400);          
 
             }
 
