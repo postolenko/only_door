@@ -5585,7 +5585,7 @@ p.green {
 
 .single-article {
     max-width: 830px;
-    margin: 0 auto 33px auto;
+    margin: 3px auto 33px auto;
 }
 
 .single-article > img {
