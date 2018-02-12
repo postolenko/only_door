@@ -1121,11 +1121,15 @@ textarea:focus {
 }
 
 .callback_1 a {
+    display: block;
+    margin: 7px 0 0 0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
     font-size: 13px;
-    line-height: 13px;
+    line-height: 18px;
     font-weight: normal;
     color: #5e5e5e;
-    border-bottom: 1px dotted #7b84a5;
+    /*border-bottom: 1px dotted #7b84a5;*/
     -webkit-transition-property: border;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1149,16 +1153,20 @@ textarea:focus {
 
 .callback_1 a:link,
 .callback_1 a:visited {
-    border-bottom: 1px dotted #7b84a5;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    /*border-bottom: 1px dotted #7b84a5;*/
 }
 
 .callback_1 a:active,
 .callback_1 a.active {
-    border-bottom: 1px dotted transparent;
+    text-decoration: none;
+    /*border-bottom: 1px dotted transparent;*/
 }
 
 .callback_1 a:hover {
-    border-bottom: 1px dotted transparent;
+    text-decoration: none;
+    /*border-bottom: 1px dotted transparent;*/
 }
 
 .callback_2 {
