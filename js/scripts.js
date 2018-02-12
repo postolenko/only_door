@@ -130,15 +130,19 @@ $(document).ready(function() {
 
                     if ( $(this).hasClass("active") ) {
 
-                        $(this).animate({
-                            "opacity" : 0
-                        }, 400);
+                        // $(this).animate({
+                        //     "opacity" : 0
+                        // }, 300);
 
-                        setTimeout(function() {
+                        $(this).css({
+                            "opacity" : 0
+                        });
+
+                        // setTimeout(function() {
 
                             $(this).removeClass("active");
 
-                        }, 700);
+                        // }, 500);
 
                     }
 
@@ -152,15 +156,19 @@ $(document).ready(function() {
 
             popupBlock = $(this).closest(".popup-wrapp");
 
-            popupBlock.animate({
-                "opacity" : 0
-            }, 400);
+            // popupBlock.animate({
+            //     "opacity" : 0
+            // }, 300);
 
-            setTimeout(function() {
+            popupBlock.css({
+                "opacity" : 0
+            });
+
+            // setTimeout(function() {
 
                 popupBlock.removeClass("active");
 
-            }, 700);
+            // }, 500);
 
         });
 
@@ -174,15 +182,19 @@ $(document).ready(function() {
                 && hide_element.has(e.target).length === 0 
                 && popupBlock.hasClass("active") ) {
 
-                popupBlock.animate({
-                    "opacity" : 0
-                }, 400);
+                // popupBlock.animate({
+                //     "opacity" : 0
+                // }, 300);
 
-                setTimeout(function() {
+                popupBlock.css({
+                    "opacity" : 0
+                });
+
+                // setTimeout(function() {
 
                     popupBlock.removeClass("active");
 
-                }, 700);
+                // }, 500);
             }
 
         });

@@ -1396,48 +1396,74 @@ a.tel-link.active {
     cursor: pointer;
     background: #ff4e4e;
     border: 1px solid #ff4e4e;
-    padding: 13px 30px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    -webkit-transition-property: background;
+    font-size: 0;
+    line-height: 0;
+    -webkit-transition-property: all;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background;
+    -moz-transition-property: all;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background;
+    -ms-transition-property: all;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background;
+    -o-transition-property: all;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background;
+    transition-property: all;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
 
 .free-call_btn:link,
 .free-call_btn:visited {
-    background: #ff4e4e;
-    border: 1px solid #ff4e4e;
     color: #ffffff;
 }
 
 .free-call_btn:active,
 .free-call_btn.active {
-    background: #f04040;
-    border: 1px solid #f04040;
     color: #ffffff;
 }
 
 .free-call_btn:hover {
-    background: #f04040;
-    border: 1px solid #f04040;
+    color: #ffffff;
+}
+
+.free-call_btn:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 1%;
+    height: 100%;
+}
+
+.free-call_btn span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 98%;
+    white-space: nowrap;
+    padding: 13px 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.free-call_btn:link span,
+.free-call_btn:visited span {
+    color: #ffffff;
+}
+
+.free-call_btn:active span,
+.free-call_btn.active span {
+    color: #ffffff;
+}
+
+.free-call_btn:hover span {
     color: #ffffff;
 }
 
@@ -6037,11 +6063,11 @@ ul.tels-nav li a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -10 !important;
 }
 
 .popup-wrapp.active {
-    z-index: 10;
+    z-index: 10 !important;
 }
 
 .popup-inner_wrapp {
