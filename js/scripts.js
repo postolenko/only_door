@@ -182,10 +182,6 @@ $(document).ready(function() {
                 && hide_element.has(e.target).length === 0 
                 && popupBlock.hasClass("active") ) {
 
-                // popupBlock.animate({
-                //     "opacity" : 0
-                // }, 300);
-
                 popupBlock.css({
                     "opacity" : 0
                 });
