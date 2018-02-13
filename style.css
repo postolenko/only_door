@@ -1042,8 +1042,16 @@ textarea:focus {
     padding: 13px 0 5px 0;
 }
 
+.header-row.row-2 .col {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .header-row.row-2 .col-1 {
     width: 16%;
+    padding-left: 0;
 }
 
 .header-row.row-2 .col-2 {
@@ -1060,6 +1068,21 @@ textarea:focus {
 
 .header-row.row-2 .col-5 {
     width: 19%;
+    padding-right: 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 158px;
+}
+
+.logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 .search_wrapp {
@@ -1106,6 +1129,7 @@ textarea:focus {
 .callback_1 {
     display: inline-table;
     vertical-align: top;
+    max-width: 170px;
 }
 
 .callback_1 .col-1 {
@@ -1477,7 +1501,7 @@ a.tel-link.active {
 
 .header-row.row-3 .row {
     position: relative;
-    padding-right: 200px;
+    padding-right: 300px !important;
 }
 
 .header-row.row-3 .free-call_btn {
