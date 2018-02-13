@@ -4615,6 +4615,11 @@ a.pagination-arrow:hover i {
     border-bottom: 1px solid #eeeeee;
 }
 
+.articles-thumbnails.no-border {
+    padding: 0;
+    border-bottom: none;
+}
+
 .article-thumb {
     display: inline-block;
     vertical-align: top;
@@ -4713,19 +4718,19 @@ a.pagination-arrow:hover i {
     border-bottom: 1px solid transparent;
 }
 
-.article-thumb:nth-child(1) {
+.articles-thumbmnails-big .article-thumb:nth-child(1) {
     width: 66.66%;
 }
 
-.article-thumb:nth-child(1) .inner {
+.articles-thumbmnails-big .article-thumb:nth-child(1) .inner {
     position: relative;
 }
 
-.article-thumb:nth-child(1) .img-box {
+.articles-thumbmnails-big .article-thumb:nth-child(1) .img-box {
     height: 460px;
 }
 
-.article-thumb:nth-child(1) .descript {
+.articles-thumbmnails-big .article-thumb:nth-child(1) .descript {
     display: inline-block;
     vertical-align: top;
     position: absolute;
@@ -4778,6 +4783,10 @@ a.pagination-arrow:hover i {
 
 .pagination_2 {
     margin-bottom: 38px;
+}
+
+.articles-thumbnails.ligth .article-thumb .descript {
+    background: #ffffff;
 }
 
 /*-- /Section 1 - Articles Catalog Page --*/
@@ -5828,10 +5837,20 @@ p.green {
     padding: 0 0 0 1%;
 }
 
-
 /*-- /Section 1 - Article Page --*/
 
+/*-- Section 7 - Article Page --*/
 
+.thumbnails_5_2 {
+
+}
+
+.thumbnails_5_2 .thumb_5 {
+    width: 33.33%;
+}
+
+
+/*-- /Section 7 - Article Page --*/
 
 
 

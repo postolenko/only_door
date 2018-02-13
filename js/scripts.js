@@ -366,19 +366,23 @@ $(document).ready(function() {
 
         $(".articles-thumbnails").each(function() {
 
-            var thumb = $(this).find(".article-thumb");
+            if( $(this).hasClass("articles-thumbmnails-big") ) {
 
-            thumb.each(function() {
+                var thumb = $(this).find(".article-thumb");
 
-                var indexThumb = $(this).index(".article-thumb");
+                thumb.each(function() {
 
-                if( indexThumb%5 == 0 ) {
+                    var indexThumb = $(this).index(".article-thumb");
 
-                    $(this).addClass("five");
+                    if( indexThumb%5 == 0 ) {
 
-                }
+                        $(this).addClass("five");
 
-            });
+                    }
+
+                });
+
+            }
 
         });
 
