@@ -463,6 +463,7 @@
 
 	.dropdown-menu {
 	    max-width: 100%;
+	    margin: 10px 0 15px 0;
 	    position: relative;
 	    top: 0;
 	}
