@@ -1968,12 +1968,12 @@ a.tel-link.active {
     vertical-align: top;
     width: 50%;
     margin: 0 10px;
-    padding: 10px 0;
+    padding: 10px;
     min-height: 246px;
 }
 
 .slider_1 .slide .thumb_2 {
-    width: unset;
+    width: 100%;
 }
 
 .thumb_2 .col-1 {
@@ -6140,6 +6140,7 @@ footer {
 .footer-nav_wrapp {
     position: relative;
     padding: 15px 80px 16px 0;
+    overflow: hidden;
 }
 
 .footer-nav {
