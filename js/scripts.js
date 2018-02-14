@@ -93,6 +93,14 @@ $(window).resize(function() {
 
     getWrapperTopOffset();
 
+    // ------------------
+
+    if( bodyWidth > 768 ) {
+
+        $(".dropdown-menu").attr("style" , "");
+
+    }
+
 });
 
 $(document).ready(function() {

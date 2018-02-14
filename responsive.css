@@ -221,11 +221,11 @@
 	    width: 29%;
 	}
 
-	.catalog-nav_wrapp ul {
+	.catalog-nav {
 	    /*margin: 0 -10px;*/
 	}
 
-	.catalog-nav_wrapp ul > li {
+	.catalog-nav > li {
 	    /*margin-left: 0 10px;*/
 	}
 
@@ -418,14 +418,18 @@
 		width: 100%;
 		height: 100vh;
 		background: #ffffff;
-		padding: 35px 2% 20px 2%;
+		padding: 10px 2% 20px 2%;
 	    position: fixed;
 	    top: 0;
 	    left: 0;
 	    z-index: 10;
 	}
 
-	.catalog-nav_wrapp ul > li {
+	.catalog-nav {
+		margin: 35px 0 20px 0;
+	}
+
+	.catalog-nav > li {
 		display: block;
 	    margin: 0;
 	    padding: 7px 0;
@@ -437,23 +441,23 @@
 		text-align: center;
 	}
 
-	.catalog-nav_wrapp ul li a {
+	.catalog-nav li a {
 	    font-size: 18px;
 	    line-height: 21px;
 	}
 
-	.catalog-nav_wrapp ul li a.dropdown_item + .dropdown-btn {
+	.catalog-nav li a.dropdown_item + .dropdown-btn {
 		position: absolute;
 		top: 8px;
 	    right: 0;	    
 		margin: 0;
 	}
 
-	.catalog-nav_wrapp ul li:hover .dropdown-menu {
+	.catalog-nav li:hover .dropdown-menu {
 	    display: none;
 	}
 
-	.catalog-nav_wrapp ul li:hover .dropdown_item:before {
+	.catalog-nav li:hover .dropdown_item:before {
 	    display: none;
 	}
 
@@ -713,6 +717,21 @@
 
 	/*-- /Section 1 --*/
 
+	/*-- Footer --*/
+
+	.two-inputs_wrapp .input_wrapp {
+	    width: 100%;
+	    float: none;
+	    margin: 8px 0;
+	}
+
+	.two-inputs_wrapp .input_wrapp:nth-child(even) {
+	    float: none;
+	    margin: 8px 0;
+	}
+
+	/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -723,25 +742,43 @@
 
 @media only screen and (min-width: 769px) {
 
+	.main-nav_wrapp {
+		display: block !important;
+		overflow: unset !important;
+	}
+
 	.catalog-nav_wrapp {
 		display: block !important;
+		overflow: unset !important;
 	}
 
-	.catalog-nav_wrapp ul li:link .dropdown-menu,
-	.catalog-nav_wrapp ul li:visited .dropdown-menu {
+	.catalog-nav_wrapp .mCustomScrollBox {
+	    overflow: unset !important;
+	}
+
+	.catalog-nav_wrapp .mCSB_container {
+	    overflow: unset !important;
+	}
+
+	.catalog-nav_wrapp .mCSB_scrollTools {
+		display: none !important;
+	}
+
+	.catalog-nav_wrapp .catalog-nav li:link .dropdown-menu,
+	.catalog-nav_wrapp .catalog-nav li:visited .dropdown-menu {
 	    display: none !important;
 	}
 
-	.catalog-nav_wrapp ul li:link .dropdown_item:before,
-	.catalog-nav_wrapp ul li:visited .dropdown_item:before {
+	.catalog-nav_wrapp .catalog-nav li:link .dropdown_item:before,
+	.catalog-nav_wrapp .catalog-nav li:visited .dropdown_item:before {
 	    display: none !important;
 	}
 
-	.catalog-nav_wrapp ul li:hover .dropdown-menu {
+	.catalog-nav li:hover .dropdown-menu {
 	    display: block !important;
 	}
 
-	.catalog-nav_wrapp ul li:hover .dropdown_item:before {
+	.catalog-nav li:hover .dropdown_item:before {
 	    display: block !important;
 	}
 

@@ -1294,11 +1294,11 @@ a.tel-link.active {
     z-index: 6;
 }
 
-.catalog-nav_wrapp ul {
+.catalog-nav {
     /*margin: 0 -20px;*/
 }
 
-.catalog-nav_wrapp ul > li {
+.catalog-nav > li {
     display: inline-block;
     vertical-align: top;
     /*margin: 0 20px;*/
@@ -1307,7 +1307,7 @@ a.tel-link.active {
     /*position: relative;*/
 }
 
-.catalog-nav_wrapp ul li a {
+.catalog-nav li a {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -1317,21 +1317,21 @@ a.tel-link.active {
     color: #212121;
 }
 
-.catalog-nav_wrapp ul li a:link,
-.catalog-nav_wrapp ul li a:vivted {
+.catalog-nav li a:link,
+.catalog-nav li a:vivted {
     color: #212121;
 }
 
-.catalog-nav_wrapp ul li a:active,
-.catalog-nav_wrapp ul li a.active {
+.catalog-nav li a:active,
+.catalog-nav li a.active {
     color: #18812a;
 }
 
-.catalog-nav_wrapp ul li a:hover {
+.catalog-nav li a:hover {
     color: #18812a;
 }
 
-.catalog-nav_wrapp ul li a.dropdown_item {
+.catalog-nav li a.dropdown_item {
     /*padding-right: 24px;*/
     position: relative;
 }
@@ -1397,7 +1397,7 @@ a.tel-link.active {
 }
 
 .dropdown-menu .title_wrapp {
-    min-height: 39px;
+    min-height: 37px;
 }
 
 .dropdown-menu h3 {
@@ -1430,6 +1430,7 @@ a.tel-link.active {
 
 .dropdown-menu ul li {
     display: block;
+    margin: 1px 20px 1px 0;
     padding: 0;
 }
 
@@ -1449,11 +1450,21 @@ a.tel-link.active {
     color: #18812a
 }
 
-.catalog-nav_wrapp ul li:hover .dropdown-menu {
+.catalog-nav li:link .dropdown-menu,
+.catalog-nav li:visited .dropdown-menu {
+    display: none;
+}
+
+.catalog-nav li:link .dropdown_item:before,
+.catalog-nav li:visited .dropdown_item:before {
+    display: none;
+}
+
+.catalog-nav li:hover .dropdown-menu {
     display: block;
 }
 
-.catalog-nav_wrapp ul li:hover .dropdown_item:before {
+.catalog-nav li:hover .dropdown_item:before {
     display: block;
 }
 
@@ -1720,8 +1731,8 @@ a.tel-link.active {
 
 .catalog-nav_wrapp .close-catalog {
     position: absolute;
-    top: 5px;
-    right: 2%;
+    top: -2px;
+    right: 0;
 }
 
 /*-------------------------------------------*/
@@ -6376,6 +6387,7 @@ ul.tels-nav li a:hover {
 
 .popup {
     display: block;
+    width: 96%;
     max-width: 473px;
     margin: 0 auto 10px auto;
     position: relative;
