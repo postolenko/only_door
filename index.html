@@ -171,14 +171,20 @@
 
 			<div class="row clearfix">
 				<div class="col col-1 left">
-					<ul class="main-nav">
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Установка</a></li>
-						<li><a href="#">О Компании</a></li>
-						<li><a href="#">Статьи</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+					<div class="main-nav_wrapp">
+						<div class="align-right close-menu_wrapp">
+							<button type="button" class="close-menu"><i class="ion-close"></i></button>
+						</div>
+						<div class="append-elem search-resp" data-append-elem = "1" ></div>
+						<ul class="main-nav">
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Установка</a></li>
+							<li><a href="#">О Компании</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="col col-2 right align-right">
 					<p><i class="map-marker-icon"></i>г.Москва м.Бибирево ул. Пришвина 26, секция D 39/1 ТВЦ «Миллион Мелочей»</p>
@@ -187,7 +193,7 @@
 
 		</div>
 
-		<div class="header-row row-2">
+		<div class="header-row row-2 resp-fixed">
 
 			<div class="row offset-ziro">
 				<div class="col col-1">
@@ -195,12 +201,21 @@
 						<img src="img/logo.png" alt="" />
 					</a>
 				</div>
+				<div class="resp-col">
+					<button class="respmenubtn">	
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
 				<div class="col col-2">
-					<div class="search_wrapp">
-						<form>
-							<input type="text" placeholder="У нас сотни моделей дверей!" />
-							<button type="button" class="search-btn"></button>
-						</form>
+					<div class="append-elem"  data-append-desktop-elem = "1" data-min-screen = "768">
+						<div class="search_wrapp">
+							<form>
+								<input type="text" placeholder="У нас сотни моделей дверей!" />
+								<button type="button" class="search-btn"></button>
+							</form>
+						</div>
 					</div>
 				</div>
 				<div class="col col-3">
@@ -226,11 +241,11 @@
 				</div>
 				<div class="col col-5 align-right">
 					<a href="#" class="shop-card">
-						<div class="col-1">
-							<p class="count">Ваша корзина (1) <i class="arrow-right ion-ios-arrow-right"></i></p>
-							<p class="p-1">Сумма: 21000 руб</p>
+						<div class="shop-card-col-1">
+							<p class="count">Ваша корзина <span class="count-goods">(10)</span> <i class="arrow-right ion-ios-arrow-right"></i></p>
+							<p class="p-1">Сумма: <span class="goods-price">21000 руб</span></p>
 						</div>
-						<div class="col-2">
+						<div class="shop-card-col-2">
 							<i class="trash-icon"></i>
 						</div>
 					</a>
@@ -242,10 +257,17 @@
 		<div class="header-row row-3">
 
 			<div class="row clearfix">
+				
+				<div class="catalog-resp_header">
+					<!-- <h3>Каталог:</h3> -->
+					<button type="button" class="green-pill catalog-btn">Каталог: <i class="ion-navicon"></i></button>
+				</div>
 				<div class="catalog-nav_wrapp">
-					<ul>
+					<button type="button" class="close-catalog"><i class="ion-close"></i></button>
+					<ul class="catalog-nav">
 						<li>
 							<a href="#" class="dropdown_item">Межкомнатные двери</a>
+							<button type="button" class="dropdown-btn"></button>
 							<div class="dropdown-menu">
 								<div class="col">
 									<div class="title_wrapp">
@@ -297,6 +319,7 @@
 						</li>
 						<li>
 							<a href="#" class="dropdown_item">Входные двери</a>
+							<button type="button" class="dropdown-btn"></button>
 							<div class="dropdown-menu">
 								<div class="col">
 									<div class="title_wrapp">
@@ -348,6 +371,7 @@
 						</li>
 						<li>
 							<a href="#" class="dropdown_item">Фурнитура</a>
+							<button type="button" class="dropdown-btn"></button>
 							<div class="dropdown-menu">
 								<div class="col">
 									<div class="title_wrapp">
@@ -463,7 +487,7 @@
 
 				<section class="slider_1-section">
 					<div class="row">
-						<div class="header-h2 links-box">						
+						<div class="header-h2 links-box">
 							<h2>Популярные товары</h2>
 							<a href="#" class="more-link">Показать все товары</a>
 						</div>
@@ -471,68 +495,76 @@
 					<div class="slider_1_wrapp">
 						<div class="row">
 							<div class="slider_1">
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Люксор ЛУ-27, Венге</a></p>
-											<p>Экошпон, С элементами стекла</p>
+								<div class="slide">
+									<div class="thumb_2">
+										<div class="col-1">
+											<div class="thumb_2_desc">
+												<div class="blue-pill">Хит</div>
+												<p><a href="#">Люксор ЛУ-27, Венге</a></p>
+												<p>Экошпон, С элементами стекла</p>
+											</div>
+											<div class="thumb_2_footer">
+												<p class="price">28 970 руб</p>
+												<p class="old-price">32 075 руб</p>
+											</div>
 										</div>
-										<div class="thumb_2_footer">
-											<p class="price">28 970 руб</p>
-											<p class="old-price">32 075 руб</p>
+										<div class="col-2">
+											<img src="img/good_01.png" alt="">
 										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_01.png" alt="">
 									</div>
 								</div>
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Лабиринт ALFA 04 -<br /> Беленый дуб</a></p>
-											<p>Экошпон, С элементами стекла Вторая строчка</p>
+								<div class="slide">
+									<div class="thumb_2">
+										<div class="col-1">
+											<div class="thumb_2_desc">
+												<div class="blue-pill">Хит</div>
+												<p><a href="#">Лабиринт ALFA 04 -<br /> Беленый дуб</a></p>
+												<p>Экошпон, С элементами стекла Вторая строчка</p>
+											</div>
+											<div class="thumb_2_footer">
+												<p class="price">22 970 руб</p>
+												<!-- <p class="old-price">32 075 руб</p> -->
+											</div>
 										</div>
-										<div class="thumb_2_footer">
-											<p class="price">22 970 руб</p>
-											<!-- <p class="old-price">32 075 руб</p> -->
+										<div class="col-2">
+											<img src="img/good_02.png" alt="">
 										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_02.png" alt="">
 									</div>
 								</div>
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Люксор ЛУ-27, Венге</a></p>
-											<p>Экошпон, С элементами стекла</p>
+								<div class="slide">
+									<div class="thumb_2">
+										<div class="col-1">
+											<div class="thumb_2_desc">
+												<div class="blue-pill">Хит</div>
+												<p><a href="#">Люксор ЛУ-27, Венге</a></p>
+												<p>Экошпон, С элементами стекла</p>
+											</div>
+											<div class="thumb_2_footer">
+												<p class="price">28 970 руб</p>
+												<p class="old-price">32 075 руб</p>
+											</div>
 										</div>
-										<div class="thumb_2_footer">
-											<p class="price">28 970 руб</p>
-											<p class="old-price">32 075 руб</p>
+										<div class="col-2">
+											<img src="img/good_01.png" alt="">
 										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_01.png" alt="">
 									</div>
 								</div>
-								<div class="thumb_2">
-									<div class="col-1">
-										<div class="thumb_2_desc">
-											<div class="blue-pill">Хит</div>
-											<p><a href="#">Лабиринт ALFA 04 -<br /> Беленый дуб</a></p>
-											<p>Экошпон, С элементами стекла Вторая строчка</p>
+								<div class="slide">
+									<div class="thumb_2">
+										<div class="col-1">
+											<div class="thumb_2_desc">
+												<div class="blue-pill">Хит</div>
+												<p><a href="#">Лабиринт ALFA 04 -<br /> Беленый дуб</a></p>
+												<p>Экошпон, С элементами стекла Вторая строчка</p>
+											</div>
+											<div class="thumb_2_footer">
+												<p class="price">22 970 руб</p>
+												<!-- <p class="old-price">32 075 руб</p> -->
+											</div>
 										</div>
-										<div class="thumb_2_footer">
-											<p class="price">22 970 руб</p>
-											<!-- <p class="old-price">32 075 руб</p> -->
+										<div class="col-2">
+											<img src="img/good_02.png" alt="">
 										</div>
-									</div>
-									<div class="col-2">
-										<img src="img/good_02.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -549,7 +581,7 @@
 					<div class="row">
 						<div class="header-h2 links-box">
 							<h2>Последние поступления</h2>
-							<p><a href="#" class="more-link">Показать все новинки</a></p>
+							<a href="#" class="more-link">Показать все новинки</a>
 						</div>
 						<div class="thumbnails_3 offset-ziro">
 							<div class="thumb_3">
@@ -884,6 +916,7 @@
 									</div>
 								</div>
 							</div>
+							<div class="slider-2_arrows-resp"></div>
 						</div>
 					</div>
 				</section>
