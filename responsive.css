@@ -490,6 +490,40 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 1 - Articles Catalog Page --*/
+
+	.article-thumb {
+	    width: 50%;
+	}
+
+	.article-thumb.five:nth-child(odd) {
+	    width: 50%;
+	}
+
+	.article-thumb.five:nth-child(odd) .img-box {
+	    height: 220px;
+	}
+
+	.article-thumb.five:nth-child(odd) .descript {
+	    position: relative;
+	    width: 100%;
+	}
+
+	.article-thumb.five:nth-child(even) + .article-thumb {
+	    width: 50%;
+	}
+
+	.article-thumb.five:nth-child(even) + .article-thumb .img-box {
+	    height: 220px;
+	}
+
+	.article-thumb.five:nth-child(even) + .article-thumb .descript {
+	    position: relative;
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - Articles Catalog Page --*/
+
 	/*-- Footer --*/
 
 	.footer-nav_wrapp {
@@ -853,6 +887,39 @@
 	}
 
 	/*-- /Section 2 - Catalog Page --*/
+
+	/*-- Section 1 - Articles Catalog Page --*/
+
+	.articles-thumbnails {
+	    margin: 10px 0;
+	}
+
+	.article-thumb {
+		display: block;
+	    width: 100%;
+	    max-width: 400px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 15px 0;
+	}
+
+	.article-thumb.five:nth-child(odd) {
+		display: block;
+	    width: 100%;
+	    max-width: 400px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.article-thumb.five:nth-child(even) + .article-thumb {
+		display: block;
+	    width: 100%;
+	    max-width: 400px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	/*-- /Section 1 - Articles Catalog Page --*/
 
 	/*-- Footer --*/
 
