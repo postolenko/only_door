@@ -224,7 +224,8 @@ h2 .small-desc {
     margin: 0 0 0 21px;
     padding-left: 18px;
     font-size: 15px;
-    line-height: 30px;
+    /*line-height: 30px;*/
+    line-height: 25px;
     font-weight: normal;
     color: #212121;
 }
@@ -516,6 +517,7 @@ textarea:focus {
 
 .breadcrumbs_wrapp {
     padding: 13px 0;
+    overflow: hidden;
 }
 
 .breadcrumbs {
@@ -3018,7 +3020,7 @@ a.tel-link.active {
     padding-bottom: 6px;
     text-align: center;
     font-size: 22px;
-    line-height: 40px;
+    line-height: 35px;
     font-weight: normal;
     color: #212121;
 }

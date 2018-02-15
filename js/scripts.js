@@ -255,17 +255,21 @@ $(document).ready(function() {
 
         $(".catalog-nav .dropdown-btn").click(function() {
 
-            parentBlock = $(this).closest("li");
+            if( bodyWidth <= 768 ) {
 
-            var dropdownMenu = parentBlock.find(".dropdown-menu");
+                parentBlock = $(this).closest("li");
 
-            if( dropdownMenu.is(":hidden") ) {
+                var dropdownMenu = parentBlock.find(".dropdown-menu");
 
-                dropdownMenu.slideDown(300);
+                if( dropdownMenu.is(":hidden") ) {
 
-            } else {
+                    dropdownMenu.slideDown(300);
 
-                dropdownMenu.slideUp(300);
+                } else {
+
+                    dropdownMenu.slideUp(300);
+
+                }
 
             }
 

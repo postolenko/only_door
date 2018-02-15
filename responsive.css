@@ -91,6 +91,54 @@
 
 }
 
+@media only screen and (max-width: 1124px) {
+
+	/*-- Section 1 - Contacts --*/
+
+	.map-box {
+	    height: auto;
+	}
+
+	.map-box .row {
+		height: auto;
+	}
+
+	.map-box .row .right-center {
+	    float: none;
+	    height: auto;
+	    width: 100%;
+	}
+
+	.map-box .row .right-center .contacts_wrapp {
+	    position: relative;
+	    top: 0;
+		transform: translate(0, 0);
+	}
+
+	.contacts_wrapp {
+	    width: 100%;
+	    padding: 21px 0;
+	}
+
+	.contacts-boxes_wrapp {
+		margin: 0 -15px;
+	}
+
+	.contacts-boxes_wrapp .contacts-box {
+	    width: auto;
+	    margin: 10px 15px !important;
+	}
+
+	#map {
+	    height: 460px;
+	    min-height: 460px;
+	    position: relative;
+	}
+
+	/*-- /Section 1 - Contacts --*/
+
+}
+
 @media only screen and (max-width: 1024px) {
 
 	/*-- Section 2 --*/
@@ -186,6 +234,23 @@
 
 	/*-- /Section 6 --*/
 
+	/*-- Section 1 - Delivery --*/
+
+	.delivery-card .col-1 {
+	    width: 50%;
+	}
+
+	.delivery-card .col-2 {
+	    width: 50%;
+	}
+
+	.two-cols-templ_2 .col-1 {
+	    width: 280px;
+	    padding: 39px 12px 45px 0;
+	}
+
+	/*-- /Section 1 - Delivery --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -259,6 +324,59 @@
 
 	/*-- /Section 7 --*/
 
+	/*-- Section 1 - Delivery --*/
+
+	.delivery-card {
+		width: 100%;
+	}
+
+	.delivery-card:nth-child(odd) {
+	    margin-right: 0;
+	}
+
+	.delivery-card:nth-child(even) {
+	    margin-left: 0;
+	}
+
+	.two-cols-templ_2 {
+		display: block;
+		margin: 30px 0;
+	}
+
+	.two-cols-templ_2 .col-1 {
+		display: block;
+	    width: 100%;
+	    padding: 0 0 10px 0;
+	}
+
+	.two-cols-templ_2 .col-2 {
+		display: block;
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.two-cols-templ_2 h3 {
+	    padding-bottom: 7px;
+	}
+
+	.two-cols-templ_2 p {
+	    padding-bottom: 10px;
+	}
+
+	/*-- /Section 1 - Delivery --*/
+
+	/*-- Section 2 - Delivery --*/
+
+	.two-cols-templ_2.resp {
+		margin-bottom: 0;
+	}
+
+	.two-cols-templ_2.resp .col-1 {
+		display: none;
+	}
+
+	/*-- /Section 2 - Delivery --*/
+
 	/*-- Footer --*/
 
 	.footer-nav_wrapp {
@@ -296,6 +414,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+	.row {
+	    padding: 0 4%;
+	}
+
+	.header-row.row-3 .row {
+	    padding-right: 4%;
+	}
 
 	.header-h2.links-box {
 		padding: 0 0 26px 0;
@@ -477,7 +603,7 @@
 	}
 
 	.header-row.row-3 .row {
-	    padding: 10px 2%;
+	    padding: 10px 4%;
 	}
 
 	.header-row.row-3 .free-call_btn {
@@ -601,6 +727,7 @@
 
 	.footer-nav {
 	    margin: 0;
+	    text-align: center;
 	}
 
 	.footer-nav li {
@@ -689,9 +816,9 @@
 		padding-top: 10px;
 	}
 
-	.header-row.row-3 .row {
+/*	.header-row.row-3 .row {
 	    padding-right: 2%;
-	}
+	}*/
 
 	.header-row.row-3 .free-call_btn {
 		display: block;
@@ -717,6 +844,23 @@
 	}
 
 	/*-- /Section 1 --*/
+
+	/*-- Section 1 - Delivery --*/
+
+	.delivery-card .inner {
+	    display: block;
+	    padding: 10px 5%;
+	}
+
+	.delivery-card .col-1,
+	.delivery-card .col-2 {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	    padding: 10px 0;
+	}
+
+	/*-- /Section 1 - Delivery --*/
 
 	/*-- Footer --*/
 
