@@ -3697,8 +3697,8 @@ p.green {
     display: inline-block;
     vertical-align: middle;
     background-color: #7b84a5;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     margin: 0 6px;
     overflow: hidden;
     -webkit-border-radius: 50%;
@@ -4283,24 +4283,107 @@ p.green {
     color: #18812a;
 }
 
-/*-- Section 2 - Catalog Page --*/
+/*-- Section 1 - Catalog Page --*/
 
 .catalog-templ {
 
 }
 
+.catalog-resp-btn {
+    /*display: block;*/
+    display: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid transparent;
+    background: transparent;
+    position: fixed;
+    top: 100px;
+    left: 2%;
+    z-index: 8;
+}
+
+.catalog-resp-btn i {
+    font-size: 50px;
+    line-height: 50px;
+    color: #212121;
+}
+
+.catalog-close-btn {
+    /*display: block;*/
+    display: none;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid transparent;
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    left: 310px;
+    z-index: 3;
+}
+
+.catalog-close-btn i {
+    font-size: 50px;
+    line-height: 50px;
+    color: #1ba91d;
+}
+
+/*.catalog-resp-btn i.close {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.catalog-resp-btn i {
+    display: block;
+}
+
+.catalog-resp-btn i.close {
+    display: none;
+}
+
+.catalog-resp-btn.active i {
+    display: none;
+}
+
+.catalog-resp-btn.active i.close {
+    display: block;
+}*/
+/*
+.catalog-resp-btn.active {
+    right: unset;
+    left: 310px;
+}*/
+
 .catalog-templ .col-1 {
-    width: 24%;
+    width: 25%;
     padding: 0 15px 0 0;
 }
 
 .catalog-templ .col-2 {
-    width: 76%;
+    width: 75%;
     padding: 0 0 0 15px;
 }
 
-.sidebar {
+.sidebar_bg {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    /*position: absolute;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+}
 
+.sidebar {
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
 }
 
 .sidebar-box {
@@ -4635,20 +4718,21 @@ p.green {
 
 .catalog-header {
     background: #f4f4f4;
-    padding: 9px 20px;
+    padding: 4px 20px;
 }
 
-.catalog-header .col-1 {
+.catalog-header-col-1 {
     width: 54%;
-    padding-top: 10px;
+    padding: 15px 0 5px 0;
 }
 
-.catalog-header .col-2 {
+.catalog-header-col-2 {
     width: 46%;
     text-align: right;
+    padding: 5px 0;
 }
 
-.catalog-header .col-1 h2 {
+.catalog-header-col-1 h2 {
     padding-bottom: 0;
 }
 
@@ -4818,8 +4902,7 @@ a.pagination-arrow:hover i {
     padding-top: 50px;
 }
 
-
-/*-- Section 2 - Catalog Page --*/
+/*-- /Section 1 - Catalog Page --*/
 
 /*-- Section 1 - Articles Catalog Page --*/
 

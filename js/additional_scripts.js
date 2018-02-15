@@ -255,5 +255,29 @@ $(document).ready(function() {
 
     }
 
+    $(function() {
+
+        if( $("#sidebar").length > 0 ) {
+
+            $("#sidebar").swipe({
+
+                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+
+                    if(direction == "left") {
+
+                        $("#sidebar").animate({
+                            "left" : -100 + "%"
+                        }, 500);
+
+                        $(".sidebar_bg").fadeOut(500);
+                    }
+
+                }
+
+            });
+
+        }
+    });
+
 });
 

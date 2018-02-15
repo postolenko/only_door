@@ -69,6 +69,28 @@
 
 	/*-- /Section 7 --*/
 
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog-templ .col-1 {
+	    width: 27%;
+	}
+
+	.catalog-templ .col-2 {
+	    width: 73%;
+	}
+
+	.catalog-header-col-1 {
+	    width: 100% !important;
+	    padding-top: 10px;
+	}
+
+	.catalog-header-col-2 {
+	    width: 100% !important;
+	    text-align: left;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
 	/*-- Footer --*/
 
 	.footer-row.row-2 .col-1 {
@@ -136,6 +158,18 @@
 	}
 
 	/*-- /Section 1 - Contacts --*/
+
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog-templ .col-1 {
+	    width: 30%;
+	}
+
+	.catalog-templ .col-2 {
+	    width: 70%;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
 
 }
 
@@ -251,9 +285,37 @@
 
 	/*-- /Section 1 - Delivery --*/
 
+	/*-- Section 2 - Catalog Page --*/
+
+	.catalog-templ .col-1 {
+	    width: 35%;
+	}
+
+	.catalog-templ .col-2 {
+	    width: 65%;
+	}
+
+	.catalog-thumbnails .thumb_3 {
+	    width: 50%;
+	}
+
+	/*-- /Section 2 - Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
+
+	/*-- Breadcrumbs --*/
+
+	.breadcrumbs_wrapp.two-cols .col-1 {
+	    width: 100%;
+	}
+
+	.breadcrumbs_wrapp.two-cols .col-2 {
+	    width: 100%;
+	}
+
+	/*-- /Breadcrumbs --*/
 
 	/*-- Header --*/
 
@@ -376,6 +438,57 @@
 	}
 
 	/*-- /Section 2 - Delivery --*/
+
+	/*-- Section 4 - Card Page --*/
+
+	.form-inputs_wrapp .inner {
+	    margin: 0;
+	}
+
+	.form-inputs_wrapp .input-field {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 4 - Card Page --*/
+
+	/*-- Section 2 - Catalog Page --*/
+
+	#sidebar {
+		width: 100%;
+		height: 100vh;
+	    padding-right: 0;
+	    float: none;
+	    position: fixed;
+	    top: 0;
+	    left: -100%;
+	    z-index: 10;
+	}
+
+	.catalog-resp-btn {
+		display: block;
+	}
+
+	.catalog-templ .sidebar {
+		width: 300px;
+	    height: 100vh;
+	    padding: 10px 0;
+	}
+
+	.catalog-templ .col-2 {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.catalog-thumbnails .thumb_3 {
+	    width: 33.33%;
+	}
+
+	.catalog-close-btn {
+	    display: block;
+	}
+
+	/*-- /Section 2 - Catalog Page --*/
 
 	/*-- Footer --*/
 
@@ -641,6 +754,14 @@
 
 	/*-- /Section 3 --*/
 
+	/*-- Section 2 - Catalog Page --*/
+
+	.catalog-thumbnails .thumb_3 {
+	    width: 50%;
+	}
+
+	/*-- /Section 2 - Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -722,6 +843,16 @@
 	}
 
 	/*-- /Section 7 --*/
+
+	/*-- Section 2 - Catalog Page --*/
+
+	.catalog-thumbnails .thumb_3 {
+		display: inline-block;
+		vertical-align: top;
+	    width: 50%;
+	}
+
+	/*-- /Section 2 - Catalog Page --*/
 
 	/*-- Footer --*/
 
@@ -860,7 +991,28 @@
 	    padding: 10px 0;
 	}
 
+	.pagination li {
+	    margin: 1px;
+	}
+
 	/*-- /Section 1 - Delivery --*/
+
+	/*-- Section 2 - Catalog Page --*/
+
+	.catalog-close-btn {
+	    top: 57px;
+	    left: 242px;
+	}
+
+	.catalog-thumbnails .thumb_3 {
+		display: block;
+	    width: 100%;
+	    max-width: 400px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	/*-- /Section 2 - Catalog Page --*/
 
 	/*-- Footer --*/
 
@@ -881,7 +1033,32 @@
 
 @media only screen and (max-width: 350px) {
 
-	
+	/*-- Section 1 - Catalog Page --*/
+
+	.pagination li a {
+	    min-width: 30px;
+	    height: 30px;
+	    padding: 0 7px;
+	    -webkit-border-radius: 15px;
+	    -moz-border-radius: 15px;
+	    border-radius: 15px;
+	    font-size: 14px;
+	    line-height: 30px;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
+}
+
+@media only screen and (min-width: 901px) {
+
+	#sidebar {
+		left: 0 !important
+	}
+
+	.sidebar_bg {
+		display: none !important
+	}
 
 }
 

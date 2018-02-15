@@ -530,6 +530,46 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".catalog-resp-btn").click(function(e) {
+
+            e.preventDefault();
+
+            if( $("#sidebar").offset().left >= 0 ) {
+
+                $("#sidebar").animate({
+                    "left" : -100 + "%"
+                }, 500);
+
+                $(".sidebar_bg").fadeOut(500);
+
+            } else {
+
+                $("#sidebar").animate({
+                    "left" : 0 + "%"
+                }, 500);
+
+                $(".sidebar_bg").fadeIn(500);
+
+            }
+
+        });
+
+        $(".sidebar_bg, .catalog-close-btn").click(function(e) {
+
+            e.preventDefault();
+
+            $("#sidebar").animate({
+                    "left" : -100 + "%"
+                }, 500);
+
+            $(".sidebar_bg").fadeOut(500);
+
+        });
+
+    });
+
 });
 
 function getCustomizeParams() {
