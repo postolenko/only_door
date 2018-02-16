@@ -456,7 +456,7 @@
 	    position: absolute;
 	    top: 50%;
 	   	right: 0;
-	   	margin: -32px 0 0 0;
+	   	margin: -29px 0 0 0;
 	}
 
 	/*-- /Section 1 - Basket Page --*/
@@ -1389,15 +1389,15 @@
 	}
 
 	.basket-table .table-row {
-	    padding-right: 26px;
+	    padding-right: 31px;
 	}
 
 	.basket-table .cell-3 {
-	    width: 65%;
+	    width: 72%;
 	}
 
 	.basket-table .cell-4 {
-	    width: 35%;
+	    width: 28%;
 	    padding-bottom: 5px;
 	    text-align: center;
 	}
@@ -1648,12 +1648,18 @@
 	.basket-table .cell-3 {
 	    width: 100%;
 	    border-bottom: 1px solid #eeeeee;
+	    padding-bottom: 12px;
+	}
+
+	.count-box-append {
+		margin-bottom: 10px;
+		padding: 0 0 10px 0;
+		border-bottom: 1px solid #eeeeee;
 	}
 
 	.basket-table .cell-4 {
-	    width: 100%;
-	    text-align: left;
-	    border-bottom: 1px solid #eeeeee;
+	    display: none;
+	    padding-bottom: 10px;
 	}
 
 	/*-- /Section 1 - Basket Page --*/
