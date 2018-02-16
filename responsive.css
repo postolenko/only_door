@@ -311,6 +311,11 @@
 	    width: 100%;
 	}
 
+	.card-slider-miniatures_wrapp {
+	    bottom: 20px;
+	    left: 0;
+	}
+
 	.good-descript {
 	    padding-right: 0;
 	}
