@@ -1017,7 +1017,19 @@
 	    text-align: center;
 	}
 
-	/*-- /Section 1 - Card Page --*/	
+	.card-table .table-row .table-cell:nth-child(1) {
+		width: 34%;
+	}
+
+	.card-table .table-row .table-cell:nth-child(2) {
+		width: 66%;
+	}
+
+	.card-table .table-row .table-cell:nth-child(1) p {
+		font-weight: bold;
+	}
+
+	/*-- /Section 1 - Card Page --*/
 
 	/*-- Footer --*/
 
