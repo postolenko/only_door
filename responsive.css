@@ -326,6 +326,86 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 1 - Basket Page --*/
+
+	.basket-table h3.resp-title {
+	    display: block;
+	}
+
+	.basket-header .col-1 {
+	    width: 100%;
+	}
+
+	.basket-header .col-2 {
+	    width: 100%;
+	    text-align: left;
+	}
+
+	.basket-table-header {
+		display: none;
+	}
+
+	.basket-table .resp-title {
+		display: block;
+	}
+
+	.basket-table {
+	    display: block;
+	    width: 100%;
+	}
+
+	.basket-table .table-row {
+	    display: block;
+	    font-size: 0;
+	    line-height: 0;
+	    position: relative;
+		padding-top: 13px;
+		padding-bottom: 18px;
+	    padding-right: 32px;
+	}
+
+	.basket-table .cell {
+	    display: inline-block;
+	    vertical-align: middle;
+	    padding: 5px;
+	}
+
+	.basket-table .cell-1 {
+	    width: 15%;
+	}
+
+	.basket-table .cell-2 {
+	    width: 29%;
+	    padding-right: 15px;
+	}
+
+	.basket-table .cell-3 {
+	    width: 38%;
+	}
+
+	.basket-table .cell-4 {
+	    width: 18%;
+	}
+
+	.basket-table .cell-5 {
+	    width: 100%;
+	    padding-top: 20px;
+	}
+
+	.basket-table .cell-5 h3.resp-title {
+		color: #18812a;
+	}
+
+	.basket-table .cell-6 {
+	    width: 30px;
+	    position: absolute;
+	    top: 50%;
+	   	right: 0;
+	   	margin: -32px 0 0 0;
+	}
+
+	/*-- /Section 1 - Basket Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -545,6 +625,24 @@
 	.article-thumb.five:nth-child(even) + .article-thumb .descript {
 	    position: relative;
 	    width: 100%;
+	}
+
+	.basket-form-header {
+	    padding-bottom: 9px;
+	}
+
+	.inputs-wrapp_2 .input_wrapp {
+	    width: 48%;
+	    margin: 10px 1% 5px 1%;
+	}
+
+	.radio-5_wrapp {
+	    margin: 0;
+	}
+
+	.radio-5 {
+	    width: 100%;
+	    margin: 7px 0;
 	}
 
 	/*-- /Section 1 - Articles Catalog Page --*/
@@ -821,6 +919,41 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 1 - Basket Page --*/
+
+	.basket-table .table-row {
+	    padding-right: 65px;
+	}
+
+	.basket-table .cell-1 {
+	    width: 25%;
+	}
+
+	.basket-table .cell-2 {
+	    width: 75%;
+	    padding-right: 0;
+	}
+
+	.basket-table .cell-3 {
+	    width: 62%;
+	}
+
+	.basket-table .cell-4 {
+	    width: 38%;
+	    text-align: right;
+	}
+
+	.basket-table .cell-5 {
+	    width: 100%;
+	    padding-top: 13px;
+	}
+
+	.basket-table .cell-5 h3.resp-title {
+	    color: #18812a;
+	}
+
+	/*-- /Section 1 - Basket Page --*/
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -1040,6 +1173,84 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- /Section 1 - Basket Page --*/
+
+	.basket-table .cell-1 {
+	    width: 37%;
+	}
+
+	.basket-table .cell-2 {
+	    width: 63%;
+	}
+
+	.basket-table h3.resp-title {
+		padding-bottom: 4px;
+	}
+
+	.basket-table .table-row {
+	    padding-right: 26px;
+	}
+
+	.basket-table .cell-3 {
+	    width: 65%;
+	}
+
+	.basket-table .cell-4 {
+	    width: 35%;
+	    padding-bottom: 5px;
+	    text-align: center;
+	}
+
+	.inputs-wrapp_2 {
+	    margin: 0;
+	}
+
+	.inputs-wrapp_2 .input_wrapp {
+	    width: 100%;
+	    margin: 10px 0 5px 0;
+	}
+
+	.basket-form {
+	    padding: 8px 15px 12px 15px;
+	}
+
+	.radio-5 .inner {
+	    padding: 12px 10px 14px 30px;
+	}
+
+	.radio-5-header:before {
+	    left: -26px;
+	}
+
+	.radio-5-header .col-1 {
+	    display: block;
+	    padding: 5px 0;
+	}
+
+	.radio-5-header .col-2 {
+	    display: block;
+	    padding: 5px 0;
+	    text-align: left;
+	}
+
+	.submit-box_wrapp {
+	    display: block;
+	}
+
+	.submit-box_wrapp .col-1 {
+	    display: block;
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.submit-box_wrapp .col-2 {
+	    display: block;
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Section 1 - Basket Page --*/
+
 	/*-- Footer --*/
 
 	.footer-nav {
@@ -1091,7 +1302,6 @@
 	}
 
 	/*-- /Footer --*/
-
 
 }
 
@@ -1209,6 +1419,29 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- /Section 1 - Basket Page --*/
+
+	.basket-table .table-row {
+	    border-bottom: 1px solid #a5a5a5;
+	}
+
+	.basket-table .cell-2 {
+	    padding-bottom: 0 !important;
+	}
+
+	.basket-table .cell-3 {
+	    width: 100%;
+	    border-bottom: 1px solid #eeeeee;
+	}
+
+	.basket-table .cell-4 {
+	    width: 100%;
+	    text-align: left;
+	    border-bottom: 1px solid #eeeeee;
+	}
+
+	/*-- /Section 1 - Basket Page --*/
+
 	/*-- Footer --*/
 
 	.two-inputs_wrapp .input_wrapp {
@@ -1242,6 +1475,40 @@
 	}
 
 	/*-- /Section 1 - Catalog Page --*/
+
+	/*-- /Section 1 - Basket Page --*/
+
+	.basket-table .table-row {
+	    padding-right: 0;
+	}
+
+	.basket-table .cell {
+	    padding: 9px 0;
+	}
+
+	.basket-table .cell-1 {
+	    width: 100%;
+	    padding: 9px 40px 9px 0;
+	}
+
+	.basket-table .cell-2 {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	.basket-table .cell-4 {
+	    width: 100%;
+	    text-align: left;
+	    border-bottom: 1px solid #eeeeee;
+	}
+
+	.basket-table .cell-6 {
+	    top: 51px;
+	    margin: 0;
+	}
+
+	/*-- /Section 1 - Basket Page --*/
 
 }
 

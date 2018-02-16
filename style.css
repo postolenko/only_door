@@ -5264,6 +5264,14 @@ a.pagination-arrow:hover i {
     border-collapse: collapse;
 }
 
+.basket-table h3.resp-title {
+    display: none;
+    padding-bottom: 13px;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    font-weight: bold;
+}
+
 .basket-table .table-row {
     display: table-row;
     border-bottom: 1px solid #e4e4e4;
