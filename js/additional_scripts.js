@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$(".slider_1").not(".slick-initialized").slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 2,
@@ -22,7 +22,6 @@ $(document).ready(function() {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            // centerMode: true
           }
         },
         {
@@ -39,13 +38,6 @@ $(document).ready(function() {
             slidesToScroll: 1
           }
         }
-        // {
-        //   breakpoint: 480,
-        //   settings: {
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1
-        //   }
-        // }
       ]
     });
 
@@ -53,7 +45,7 @@ $(document).ready(function() {
         dots: true,
         appendArrows: $(".slider-2_arrows"),
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 3,
@@ -80,7 +72,7 @@ $(document).ready(function() {
     $(".slider_2_2").not(".slick-initialized").slick({
         dots: true,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 3,
@@ -105,7 +97,7 @@ $(document).ready(function() {
     $(".slider-3").not(".slick-initialized").slick({
         dots: false,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 4,
@@ -138,7 +130,7 @@ $(document).ready(function() {
     $(".card-slider-big").not(".slick-initialized").slick({
         dots: false,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 500,
         slidesToShow: 1,
@@ -194,7 +186,7 @@ $(document).ready(function() {
     var articleSlider = $('.article-slider').slick({
         dots: false,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 500,
         slidesToShow: 1,
@@ -253,7 +245,6 @@ $(document).ready(function() {
             keypressSlider.noUiSlider.set(r);
         }
 
-        // Listen to keydown events on the input field.
         inputs.forEach(function(input, handle) {
 
             input.addEventListener('change', function(){
@@ -265,17 +256,12 @@ $(document).ready(function() {
                 var values = keypressSlider.noUiSlider.get();
                 var value = Number(values[handle]);
 
-                // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
                 var steps = keypressSlider.noUiSlider.steps();
 
-                // [down, up]
                 var step = steps[handle];
 
                 var position;
 
-                // 13 is enter,
-                // 38 is key up,
-                // 40 is key down.
                 switch ( e.which ) {
 
                     case 13:
@@ -284,15 +270,12 @@ $(document).ready(function() {
 
                     case 38:
 
-                        // Get step to go increase slider value (up)
                         position = step[1];
 
-                        // false = no step is set
                         if ( position === false ) {
                             position = 1;
                         }
 
-                        // null = edge of slider
                         if ( position !== null ) {
                             setSliderHandle(handle, value + position);
                         }
