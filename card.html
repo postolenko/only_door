@@ -21,11 +21,13 @@
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/nouislider.min.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.touchSwipe.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Only Door</title>
 
 </head>
+
 
 <body>
 
@@ -162,7 +164,7 @@
 
 	<!-- Header -->
 		
-	<header>
+		<header>
 
 		<div class="header-row row-1">
 
@@ -477,96 +479,98 @@
 										</div>
 									</div>
 								</div>
-								<div class="delivery-descript">
-									<div class="thumbnails_wrapp">
-										<div class="thumbnails_1 thumbnails_1_1 offset-ziro set_height">
-											<div class="thumb_1 grey thumb">
-												<div class="inner thumb_1_2">
-													<div class="col-1">
-														<img src="img/worker_3.png" alt="" />
+								<div class="append-elem"  data-append-desktop-elem = "2" data-min-screen = "1024">
+									<div class="good-descript">
+										<div class="thumbnails_wrapp">
+											<div class="thumbnails_1 thumbnails_1_1 offset-ziro set_height">
+												<div class="thumb_1 grey thumb">
+													<div class="inner thumb_1_2">
+														<div class="col-1">
+															<img src="img/worker_3.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p class="p-1">Беслатный вызов замерщика</p>
+															<p><a href="#" class="show_popup" data-show-popup = "popup_3">Заказать замер</a></p>
+														</div>
 													</div>
-													<div class="col-2">
-														<p class="p-1">Беслатный вызов замерщика</p>
-														<p><a href="#" class="show_popup" data-show-popup = "popup_3">Заказать замер</a></p>
+												</div>
+												<div class="thumb_1 thumb_1_4 grey-light thumb">
+													<div class="inner">
+														<div class="col-1">
+															<img src="img/car.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p class="p-1">Доставим эту дверь и установим ее за 7 дней</p>
+															<p><a href="#" class="show_popup" data-show-popup = "popup_3">О доставке и оплате</a></p>
+														</div>
 													</div>
 												</div>
 											</div>
-											<div class="thumb_1 thumb_1_4 grey-light thumb">
-												<div class="inner">
-													<div class="col-1">
-														<img src="img/car.png" alt="" />
-													</div>
-													<div class="col-2">
-														<p class="p-1">Доставим эту дверь и установим ее за 7 дней</p>
-														<p><a href="#" class="show_popup" data-show-popup = "popup_3">О доставке и оплате</a></p>
-													</div>
+										</div>
+										<h4>Характеристики:</h4>
+										<div class="table">
+											<div class="table-row">
+												<div class="table-cell">
+													<p>Наличие</p>
+												</div>
+												<div class="table-cell">
+													<p class="green">В наличии</p>
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell">
+													<p>Погонаж</p>
+												</div>
+												<div class="table-cell">
+													<p>Телескопический</p>
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell">
+													<p>Тип двери</p>
+												</div>
+												<div class="table-cell">
+													<p>Глухая</p>
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell">
+													<p>Покрытие</p>
+												</div>
+												<div class="table-cell">
+													<p>Экошпон</p>
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell">
+													<p>Торговая марка</p>
+												</div>
+												<div class="table-cell">
+													<p>STATUS</p>
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell">
+													<p>Стиль</p>
+												</div>
+												<div class="table-cell">
+													<p>Классика</p>
+												</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell">
+													<p>Цвет</p>
+												</div>
+												<div class="table-cell">
+													<p>Анегри</p>
 												</div>
 											</div>
 										</div>
-									</div>
-									<h4>Характеристики:</h4>
-									<div class="table">
-										<div class="table-row">
-											<div class="table-cell">
-												<p>Наличие</p>
-											</div>
-											<div class="table-cell">
-												<p class="green">В наличии</p>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="table-cell">
-												<p>Погонаж</p>
-											</div>
-											<div class="table-cell">
-												<p>Телескопический</p>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="table-cell">
-												<p>Тип двери</p>
-											</div>
-											<div class="table-cell">
-												<p>Глухая</p>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="table-cell">
-												<p>Покрытие</p>
-											</div>
-											<div class="table-cell">
-												<p>Экошпон</p>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="table-cell">
-												<p>Торговая марка</p>
-											</div>
-											<div class="table-cell">
-												<p>STATUS</p>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="table-cell">
-												<p>Стиль</p>
-											</div>
-											<div class="table-cell">
-												<p>Классика</p>
-											</div>
-										</div>
-										<div class="table-row">
-											<div class="table-cell">
-												<p>Цвет</p>
-											</div>
-											<div class="table-cell">
-												<p>Анегри</p>
-											</div>
-										</div>
-									</div>
-									<h4>Описание модели:</h4>
-									<p>Межкомнатные двери Status Classic модель 511 созданы специально для любителей классики. Благодаря элегантному декору и традиционной расцветке они хорошо сочетаются с интерьерами в стиле модерн, арт-деко, классицизм, кантри, эклектика и многими другими.</p>
+										<h4>Описание модели:</h4>
+										<p>Межкомнатные двери Status Classic модель 511 созданы специально для любителей классики. Благодаря элегантному декору и традиционной расцветке они хорошо сочетаются с интерьерами в стиле модерн, арт-деко, классицизм, кантри, эклектика и многими другими.</p>
 
-									<p>Экошпон, покрывающий дверное полотно, имитирует фактуру и рисунок ценных пород древесины, поэтому двери Статус Classik выглядят солидно и дорого. Благодаря современному шпонированному покрытию они не боятся влаги, сохраняют насыщенность цвета и подходят для мытья бытовой химией – поэтому их можно устанавливать даже в помещениях с повышенной влажностью.</p>
+										<p>Экошпон, покрывающий дверное полотно, имитирует фактуру и рисунок ценных пород древесины, поэтому двери Статус Classik выглядят солидно и дорого. Благодаря современному шпонированному покрытию они не боятся влаги, сохраняют насыщенность цвета и подходят для мытья бытовой химией – поэтому их можно устанавливать даже в помещениях с повышенной влажностью.</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-2 right">
@@ -642,7 +646,7 @@
 											<div class="two-cols_2 clearfix">
 												<div class="col-1 left">
 													<h4>Тип полотна:</h4>
-													<div class="card-checkboxes">
+													<div class="card-checkboxes offset-ziro">
 														<div class="checkbox-2">
 															<input type="checkbox" id="ch_2" name="card_ch">
 															<label for="ch_2">Глухое</label>
@@ -783,8 +787,9 @@
 										</div>
 									</div>
 								</div>
-							</div>							
+							</div>
 						</div>
+						<div class="append-elem" data-append-elem = "2" ></div>
 					</div>
 				</section>
 

@@ -301,6 +301,22 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.card-templ > .col-1 {
+	    width: 100%;
+	}
+
+	.card-templ > .col-2 {
+	    width: 100%;
+	}
+
+	.card-templ .card-inner {
+	    margin: 15px 0;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -921,6 +937,79 @@
 
 	/*-- /Section 1 - Articles Catalog Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.card-slider-big .slick-arrow.slick-prev {
+	    left: 0;
+	}
+
+	.card-slider-big .slick-arrow.slick-next {
+	    right: 0;
+	}
+
+	.prices-box .col-1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.prices-box .col-2 {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.prices-box .col-1:after {
+		display: none;
+	}
+
+	.card-inner .two-cols_3 .col:nth-child(odd) {
+	    width: 100%;
+	    margin: 0;
+	    float: none;
+	}
+
+	.card-inner .two-cols_3 .col:nth-child(even) {
+	    width: 100%;
+	    margin: 0;
+	    float: none;
+	}
+
+	.card-row.two-cols .col-1 {
+	    width: 100%;
+	    float: none;
+	    padding: 2px 0;
+	}
+
+	.card-row.two-cols .col-2 {
+	    width: 100%;
+	    float: none;
+	    text-align: left;
+	    padding: 2px 0;
+	}
+
+	.card-row .two-cols_2 .col-1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.card-row .two-cols_2 .col-2 {
+	    width: 100%;
+	    padding-left:  0;
+	}
+
+	.soc-links_wrapp p {
+	    width: 100%;
+	    text-align: center;
+	    padding-bottom: 10px;
+	}
+
+	.soc-links_wrapp .soc-list {
+	    width: 100%;
+	    margin: 0;
+	    text-align: center;
+	}
+
+	/*-- /Section 1 - Card Page --*/	
+
 	/*-- Footer --*/
 
 	.footer-nav {
@@ -1014,10 +1103,6 @@
 		padding-top: 10px;
 	}
 
-/*	.header-row.row-3 .row {
-	    padding-right: 2%;
-	}*/
-
 	.header-row.row-3 .free-call_btn {
 		display: block;
 		position: relative;
@@ -1080,6 +1165,19 @@
 	}
 
 	/*-- /Section 2 - Catalog Page --*/
+
+	/*-- Section 1 - Card Page --*/
+
+	.card-header-desc .col-1 {
+	    width: 100%;
+	}
+
+	.card-header-desc .col-2 {
+	    width: 100%;
+	    text-align: left;
+	}
+
+	/*-- /Section 1 - Card Page --*/
 
 	/*-- Footer --*/
 

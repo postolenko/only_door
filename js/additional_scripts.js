@@ -74,20 +74,6 @@ $(document).ready(function() {
                 appendArrows: $(".slider-2_arrows-resp")
               }
             }
-            // {
-            //   breakpoint: 600,
-            //   settings: {
-            //     slidesToShow: 2,
-            //     slidesToScroll: 2
-            //   }
-            // },
-            // {
-            //   breakpoint: 480,
-            //   settings: {
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1
-            //   }
-            // }
           ]
     });
 
@@ -97,7 +83,23 @@ $(document).ready(function() {
         // autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 
     $(".slider-3").not(".slick-initialized").slick({
@@ -106,7 +108,31 @@ $(document).ready(function() {
         // autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
-        slidesToShow: 4
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 570,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 
     $(".card-slider-big").not(".slick-initialized").slick({
@@ -125,7 +151,44 @@ $(document).ready(function() {
         slidesToShow: 10,
         asNavFor: '.card-slider-big',
         dots: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 12,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 10,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 580,
+              settings: {
+                slidesToShow: 8,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 380,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 
     var articleSlider = $('.article-slider').slick({

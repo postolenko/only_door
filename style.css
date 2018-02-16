@@ -3321,11 +3321,11 @@ a.tel-link.active {
     transform: none;
 }
 
-.delivery-descript {
+.good-descript {
     padding-right: 21px;
 }
 
-.delivery-descript h4 {
+.good-descript h4 {
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -3361,7 +3361,7 @@ p.green {
     color: #18812a;
 }
 
-.delivery-descript p {
+.good-descript p {
     padding: 10px 0;
     font-size: 13px;
     line-height: 22px;
@@ -3830,7 +3830,7 @@ p.green {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin: 5px 7px 13px 7px;
+    margin: 5px 7px;
 }
 
 .checkbox-2 input {
@@ -3849,6 +3849,7 @@ p.green {
     position: relative;
     padding-left: 28px;
     padding-right: 5px;
+    padding-bottom: 0;
     font-size: 13px;
     line-height: 25px;
     color: #212121;
@@ -4166,7 +4167,7 @@ p.green {
     left: 20px;
 }
 
-.delivery-descript > img {
+.good-descript > img {
     width: 100%;
     margin: 11px 0 9px 0;
 }
