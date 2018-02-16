@@ -1005,6 +1005,15 @@
 	    padding-left:  0;
 	}
 
+	.card-inline-elems {
+		text-align: center;
+	}
+
+	.card-inline-elems .col {
+		width: 100%;
+		padding: 10px 0;
+	}
+
 	.soc-links_wrapp p {
 	    width: 100%;
 	    text-align: center;

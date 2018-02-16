@@ -3634,8 +3634,8 @@ p.green {
 
 .inline-elems .col {
     display: inline-block;
-    vertical-align: top;
-    padding: 6px 9px 11px 6px;
+    vertical-align: bottom;
+    padding: 0 9px 11px 6px;
 }
 
 .inline-elems .red-pill {
@@ -3643,7 +3643,13 @@ p.green {
     margin: 0;
 }
 
+.count-box_wrapp h3 {
+    padding-bottom: 5px; 
+}
+
 .count-box {
+    display: inline-block;
+    vertical-align: top;
     width: 110px;
 }
 
