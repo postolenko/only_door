@@ -91,6 +91,46 @@
 
 	/*-- /Section 1 - Catalog Page --*/
 
+	/*-- Section 1 - About Page --*/
+
+	.article_2 {
+		display: block;
+		text-align: center;
+	}
+
+	.article_2 .col-1 {
+		display: block;
+		width: 100%;
+	}
+
+	.article_2 .col-2 img {
+	    max-width: 95%;
+	    right: 10px;
+	}
+
+	.article_2 .col-2 {
+		display: none;
+	}
+
+	.article_2 h2 {
+	    padding-bottom: 10px;
+	    line-height: 41px;
+	}
+
+	/*-- /Section 1 - About Page --*/
+
+	/*-- Section 2 - About Page --*/
+
+	.thumbnails-2 {
+	    margin: 0 -24px 17px -24px;
+	}
+
+	.thumb-2 {
+	    padding: 10px 24px;
+	}
+
+	/*-- /Section 2 - About Page --*/
+
 	/*-- Footer --*/
 
 	.footer-row.row-2 .col-1 {
@@ -405,6 +445,30 @@
 	}
 
 	/*-- /Section 1 - Basket Page --*/
+
+	/*-- Section 3 - About Page --*/
+
+	.two-cols_4 > .col-1 {
+	   display: none;
+	}
+
+	.two-cols_4 > .col-2 {
+	   width: 100%;
+	}
+
+	/*-- /Section 3 - About Page --*/
+
+	/*-- Section 5 - About Page --*/
+
+	.two-cols_5 > .col-1 {
+	    width: 100%;
+	}
+
+	.two-cols_5 > .col-2 {
+	    display: none;
+	}
+
+	/*-- /Section 5 - About Page --*/
 
 }
 
@@ -954,6 +1018,98 @@
 
 	/*-- /Section 1 - Basket Page --*/
 
+	/*-- Section 2 - About Page --*/
+
+	.thumbnails-2 {
+	    margin: 0 0 17px 0;
+	}
+
+	.thumb-2 {
+		width: 100%;
+	    padding: 10px 0 20px 0;
+	    border-bottom: 1px solid #eeeeee;
+	}
+
+	.thumbnails-2 .thumb-2:last-child {
+		border-bottom: none;
+	}
+
+	/*-- /Section 2 - About Page --*/
+
+	/*-- Section 3 - About Page --*/
+
+	.article_3 {
+		padding-top: 230px;
+		position: relative;
+	}
+
+	.article_3 .col-1 {
+	    width: 100%;
+	    padding: 7px 0 10px 0;
+	    position: relative;
+	}
+
+	.article_3 .col-2 {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.article_3 .col-2 img {
+	    height: 200px;
+	    float: none;
+	    margin: 0 auto;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+
+	/*-- /Section 3 - About Page --*/
+
+	/*-- Section 5 - About Page --*/
+
+	.article_4 .col-1 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.article_4 .col-2 {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.article_4 h2 {
+	    padding-bottom: 0;
+	    font-size: 24px;
+	    line-height: 32px;
+	}
+
+	/*-- /Section 5 - About Page --*/
+
+	/*-- Section 6 - About Page --*/
+
+	.article_5 .col-1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.article_5 .col-2 {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.article_5 h2 {
+	    padding-bottom: 4px;
+	    font-size: 26px;
+	    line-height: 34px;
+	}
+
+	.article_5 .col-1 .green-pill,
+	.article_5 .col-1 .red-pill {
+	    margin: 9px 0;
+	}
+
+	/*-- /Section 6 - About Page --*/
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -1250,6 +1406,21 @@
 	}
 
 	/*-- /Section 1 - Basket Page --*/
+
+	/*-- Section 4 - About Page --*/
+
+	.info-box-2 {
+	    margin: 20px 0;
+	    padding: 0 0 0 13px;
+	}
+
+	.info-box-2 h2 {
+	    padding-bottom: 15px;
+	    font-size: 20px;
+	    line-height: 32px;
+	}
+
+	/*-- /Section 4 - About Page --*/
 
 	/*-- Footer --*/
 
