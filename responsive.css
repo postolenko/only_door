@@ -131,6 +131,21 @@
 
 	/*-- /Section 2 - About Page --*/
 
+	/*-- Section 1 - Article Page --*/
+
+	.article-slider_wrapp {
+	    margin: 25px 0;
+	}
+
+	.article-slider_wrapp .count-slides_wrapp {
+	     position: relative;
+	     top: 0;
+	     left: 0;
+	     margin: 0 auto;
+	}
+
+	/*-- .Section 1 - Article Page --*/
+
 	/*-- Footer --*/
 
 	.footer-row.row-2 .col-1 {
@@ -711,6 +726,18 @@
 
 	/*-- /Section 1 - Articles Catalog Page --*/
 
+	/*-- Section 1 - Article Page --*/
+
+	.article-slider .slick-prev {
+	    left: 10px;
+	}
+
+	.article-slider .slick-next {
+	    right: 10px;
+	}
+
+	/*-- .Section 1 - Article Page --*/
+
 	/*-- Footer --*/
 
 	.footer-nav_wrapp {
@@ -1109,6 +1136,24 @@
 	}
 
 	/*-- /Section 6 - About Page --*/
+
+	/*-- Section 1 - Article Page --*/
+
+	.two-cols_6 .col {
+	    width: 100%;
+	}
+
+	.two-cols_6 .col:nth-child(odd) {
+	    float: none;
+	    padding: 0;
+	}
+
+	.two-cols_6 .col:nth-child(even) {
+	    float: none;
+	    padding: 0;
+	}
+
+	/*-- /Section 1 - Article Page --*/
 
 }
 

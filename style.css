@@ -6001,9 +6001,8 @@ p.green {
 }
 
 .single-article > img {
-    width: auto;
+    width: 100%;
     height: auto;
-    min-width: 100%;
     margin: 12px 0;
 }
 
@@ -6152,6 +6151,7 @@ p.green {
 .count-slides_wrapp p {
     display: inline-block;
     vertical-align: top;
+    margin: 0;
     font-size: 16px;
     line-height: 25px;
     color: #212121;
