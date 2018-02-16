@@ -8,7 +8,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="ionicons.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
@@ -20,11 +19,10 @@
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/nouislider.min.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.touchSwipe.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
-	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Only Door</title>
 
@@ -171,14 +169,20 @@
 
 			<div class="row clearfix">
 				<div class="col col-1 left">
-					<ul class="main-nav">
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Установка</a></li>
-						<li><a href="#">О Компании</a></li>
-						<li><a href="#">Статьи</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+					<div class="main-nav_wrapp scroll">
+						<div class="align-right close-menu_wrapp">
+							<button type="button" class="close-menu"><i class="ion-close"></i></button>
+						</div>
+						<div class="append-elem search-resp" data-append-elem = "1" ></div>
+						<ul class="main-nav">
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Установка</a></li>
+							<li><a href="#">О Компании</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="col col-2 right align-right">
 					<p><i class="map-marker-icon"></i>г.Москва м.Бибирево ул. Пришвина 26, секция D 39/1 ТВЦ «Миллион Мелочей»</p>
@@ -187,23 +191,32 @@
 
 		</div>
 
-		<div class="header-row row-2">
+		<div class="header-row row-2 resp-fixed">
 
-			<div class="row clearfix">
-				<div class="col col-1 left">
+			<div class="row offset-ziro">
+				<div class="col col-1">
 					<a class="logo" href="#">
 						<img src="img/logo.png" alt="" />
 					</a>
 				</div>
-				<div class="col col-2 left">
-					<div class="search_wrapp">
-						<form>
-							<input type="text" placeholder="У нас сотни моделей дверей!" />
-							<button type="button" class="search-btn"></button>
-						</form>
+				<div class="resp-col">
+					<button class="respmenubtn">	
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="col col-2">
+					<div class="append-elem"  data-append-desktop-elem = "1" data-min-screen = "768">
+						<div class="search_wrapp">
+							<form>
+								<input type="text" placeholder="У нас сотни моделей дверей!" />
+								<button type="button" class="search-btn"></button>
+							</form>
+						</div>
 					</div>
 				</div>
-				<div class="col col-3 left">
+				<div class="col col-3">
 					<div class="callback_1">
 						<div class="col-1">
 							<i class="connects-icon"></i>
@@ -213,7 +226,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-4 left">
+				<div class="col col-4">
 					<div class="callback_2">
 						<div class="col-1">
 							<i class="tel-icon"></i>
@@ -224,13 +237,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="col col-5 left align-right">
+				<div class="col col-5 align-right">
 					<a href="#" class="shop-card">
-						<div class="col-1">
-							<p class="count">Ваша корзина (1) <i class="arrow-right ion-ios-arrow-right"></i></p>
-							<p class="p-1">Сумма: 21000 руб</p>
+						<div class="shop-card-col-1">
+							<p class="count">Ваша корзина <span class="count-goods">(10)</span> <i class="arrow-right ion-ios-arrow-right"></i></p>
+							<p class="p-1">Сумма: <span class="goods-price">21000 руб</span></p>
 						</div>
-						<div class="col-2">
+						<div class="shop-card-col-2">
 							<i class="trash-icon"></i>
 						</div>
 					</a>
@@ -242,10 +255,17 @@
 		<div class="header-row row-3">
 
 			<div class="row clearfix">
-				<div class="catalog-nav_wrapp">
-					<ul>
+				
+				<div class="catalog-resp_header">
+					<!-- <h3>Каталог:</h3> -->
+					<button type="button" class="green-pill catalog-btn">Каталог: <i class="ion-navicon"></i></button>
+				</div>
+				<div class="catalog-nav_wrapp scroll">
+					<button type="button" class="close-catalog"><i class="ion-close"></i></button>
+					<ul class="catalog-nav">
 						<li>
 							<a href="#" class="dropdown_item">Межкомнатные двери</a>
+							<button type="button" class="dropdown-btn"></button>
 							<div class="dropdown-menu">
 								<div class="col">
 									<div class="title_wrapp">
@@ -297,6 +317,7 @@
 						</li>
 						<li>
 							<a href="#" class="dropdown_item">Входные двери</a>
+							<button type="button" class="dropdown-btn"></button>
 							<div class="dropdown-menu">
 								<div class="col">
 									<div class="title_wrapp">
@@ -348,6 +369,7 @@
 						</li>
 						<li>
 							<a href="#" class="dropdown_item">Фурнитура</a>
+							<button type="button" class="dropdown-btn"></button>
 							<div class="dropdown-menu">
 								<div class="col">
 									<div class="title_wrapp">
@@ -479,6 +501,7 @@
 												<p>MARKE, дверь с зеркалом -<br /> Шамбори белая</p>
 											</div>
 											<div class="cell cell-3">
+												<h3 class="resp-title">Цена</h3>
 												<div class="prices-box-2 clearfix">
 													<div class="col">
 														<h3>За комплект:</h3>
@@ -703,10 +726,12 @@
 					</div>
 					<div class="col col-4 left">
 						<h3>Свяжитесь с нами:</h3>
-						<ul class="tels-nav">
-							<li><a href="tel:+74997144090">+7(499)714-40-90</a></li>
-							<li><a href="tel:+79258090120">+7(925)809-01-20</a></li>
-						</ul>
+						<div class="thumbnails_wrapp">
+							<ul class="tels-nav">
+								<li><a href="tel:+74997144090">+7(499)714-40-90</a></li>
+								<li><a href="tel:+79258090120">+7(925)809-01-20</a></li>
+							</ul>
+						</div>
 						<p>Мы работаем ежедневно с 9:00—21:00</p>
 						<a href="#" class="red-pill show_popup"  data-show-popup = "popup_3">Бесплатный замер</a>
 					</div>
