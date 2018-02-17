@@ -1802,25 +1802,29 @@ a.tel-link.active {
     background-position: center;
 }
 
-.thumb_1 img {
+/*.thumb_1 img {
     position: absolute;
     top: 50%;
     left: 50%;
+    bottom: unset;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}*/
+
+.thumb_1 .inner.thumb_1_2 img {
+    position: absolute;  
+    left: 6px;
+    bottom: 0;
 }
 
-.thumb_1 .thumb_1_2 img {
-    position: absolute;
-    top: unset;
-    bottom: 0;
-    left: 6px;
-    transform: none;
+.thumb_1 .thumb_1_3 .col-1 {
+    background-image: url(img/thumb_1_3_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*-- /Section 1 --*/
-
 
 /*-- Section 2 --*/
 
