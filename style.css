@@ -1811,7 +1811,7 @@ a.tel-link.active {
     transform: translate(-50%, -50%);
 }
 
-.thumb_1_2 img {
+.thumb_1 .thumb_1_2 img {
     position: absolute;
     top: unset;
     bottom: 0;
