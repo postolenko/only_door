@@ -1340,6 +1340,9 @@ a.tel-link.active {
     display: none;
     width: 100%;
     max-width: 920px;
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
     padding: 15px 19px 18px 19px;
     position: absolute;
     top: 100%;
@@ -1802,26 +1805,20 @@ a.tel-link.active {
     background-position: center;
 }
 
-/*.thumb_1 img {
+.thumb_1 img {
     position: absolute;
     top: 50%;
     left: 50%;
-    bottom: unset;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}*/
-
-.thumb_1 .inner.thumb_1_2 img {
-    position: absolute;  
-    left: 6px;
-    bottom: 0;
 }
 
-.thumb_1 .thumb_1_3 .col-1 {
-    background-image: url(img/thumb_1_3_img.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.thumb_1 .thumb_1_2 img {
+    top: unset;
+    left: 6px;
+    bottom: 0;
+    transform: none;
 }
 
 /*-- /Section 1 --*/
@@ -5372,15 +5369,13 @@ p.sum-price {
     border: 2px solid #1ba91d;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
-    font-family: "Ionicons";
-    font-size: 9px;
-    line-height: 14px;
-    color: #1ba91d;
+    border-radius: 50%;    
 }
 
 .radio-5 input:checked + .inner .radio-5-header:before {
-    content: "\f21b";
+    background-image: url(img/checked_radio.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .radio-5 h3 {
@@ -6469,3 +6464,42 @@ ul.tels-nav li a:hover {
 }
 
 /*--/Popups --*/
+
+/*-- IE --*/
+
+.ie .thumb_1 .thumb_1_2 .col-1 {
+    background-image: url(img/worker.png);
+    background-position: 9px bottom;
+    background-repeat: no-repeat;
+}
+
+.ie .thumb_1  .thumb_1_2_small .col-1 {
+    background-image: url(img/worker_3.png);
+    background-position: 6px bottom;
+}
+
+.ie .thumb_1 .thumb_1_2 .col-1 img {
+    display: none;
+}
+
+.ie .thumb_1 .thumb_1_3 .col-1 {
+    background-image: url(img/thumb_1_3_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ie .thumb_1 .thumb_1_3 .col-1 img {
+    display: none;
+}
+
+.ie .ie-bg {
+    background-image: url(img/worker_2.png);
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+}
+
+.ie .ie-bg img {
+    display: none;
+}
+
+/*-- /IE --*/
