@@ -533,6 +533,10 @@
 	    /*margin-left: 0 10px;*/
 	}
 
+	.dropdown-menu {
+	    height: auto;
+	}
+
 	.dropdown-menu .col {
 	    width: 49%;
 	}
