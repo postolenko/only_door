@@ -1284,7 +1284,8 @@ a.tel-link.active {
 .catalog-nav > li {
     display: inline-block;
     vertical-align: top;
-    margin: 17px 20px 7px 0;
+    margin: 17px 20px 0 0;
+    padding-bottom: 7px;
 }
 
 .catalog-nav li a {
