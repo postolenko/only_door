@@ -1338,16 +1338,16 @@ a.tel-link.active {
 }
 
 .dropdown-menu {
-    display: none;
+    display: block;
     width: 100%;
     max-width: 920px;
     height: 345px;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: auto;
     padding: 15px 19px 18px 19px;
+    border: 1px solid transparent;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -100000px;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0 10px 46px 0 rgba(0, 0, 0, .27);
     -moz-box-shadow: 0 10px 46px 0 rgba(0, 0, 0, .27);
@@ -1413,7 +1413,7 @@ a.tel-link.active {
 
 .catalog-nav li:link .dropdown-menu,
 .catalog-nav li:visited .dropdown-menu {
-    display: none;
+    left: -100000px;
 }
 
 .catalog-nav li:link .dropdown_item:before,
@@ -1422,7 +1422,7 @@ a.tel-link.active {
 }
 
 .catalog-nav li:hover .dropdown-menu {
-    display: block;
+    left: 0;
 }
 
 .catalog-nav li:hover .dropdown_item:before {

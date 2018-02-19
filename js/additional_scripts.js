@@ -1,8 +1,24 @@
+var w = window,
+d = document,
+e = d.documentElement,
+g = d.getElementsByTagName('body')[0],
+bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
 $(window).on("load",function(){
 
 	$(".scroll").mCustomScrollbar();
 
     $(".scroll-box").mCustomScrollbar();
+
+    initCustomScrollbar();
+
+});
+
+$(window).resize(function() {
+
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+    initCustomScrollbar();
 
 });
 
@@ -217,6 +233,14 @@ $(document).ready(function() {
         minimumResultsForSearch: Infinity
     });
 
+    // $(".scroll-menu").each(function() {
+
+    //     new PerfectScrollbar(this, {
+    //       wheelSpeed: .5
+    //     });
+
+    // });
+
     //  Слайдер диапазона цен 
 
     if( $(".range-slider").length > 0 ) {
@@ -326,4 +350,18 @@ $(document).ready(function() {
     });
 
 });
+
+function initCustomScrollbar() {
+
+    if( bodyWidth < 900 ) {
+
+        $(".catalog-nav_wrapp").mCustomScrollbar();
+
+    } else {
+
+        $(".catalog-nav_wrapp").mCustomScrollbar('destroy');
+
+    }
+
+}
 

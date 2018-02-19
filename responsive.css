@@ -534,7 +534,9 @@
 	}
 
 	.dropdown-menu {
+		display: none;
 	    height: auto;
+	    left: 0 !important;
 	}
 
 	.dropdown-menu .col {
@@ -1767,22 +1769,17 @@
 		display: none !important;
 	}
 
-	.catalog-nav_wrapp .catalog-nav li:link .dropdown-menu,
-	.catalog-nav_wrapp .catalog-nav li:visited .dropdown-menu {
-	    display: none !important;
-	}
-
 	.catalog-nav_wrapp .catalog-nav li:link .dropdown_item:before,
 	.catalog-nav_wrapp .catalog-nav li:visited .dropdown_item:before {
 	    display: none !important;
 	}
 
-	.catalog-nav li:hover .dropdown-menu {
+	.catalog-nav li:hover .dropdown_item:before {
 	    display: block !important;
 	}
 
-	.catalog-nav li:hover .dropdown_item:before {
-	    display: block !important;
+	.dropdown-menu {
+	    overflow: auto !important;
 	}
 
 }
