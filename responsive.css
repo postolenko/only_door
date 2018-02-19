@@ -525,20 +525,6 @@
 	    width: 29%;
 	}
 
-	.catalog-nav {
-	    /*margin: 0 -10px;*/
-	}
-
-	.catalog-nav > li {
-	    /*margin-left: 0 10px;*/
-	}
-
-	.dropdown-menu {
-		display: none;
-	    height: auto;
-	    left: 0 !important;
-	}
-
 	.dropdown-menu .col {
 	    width: 49%;
 	}
@@ -948,10 +934,13 @@
 	}
 
 	.dropdown-menu {
+		display: none;
 	    max-width: 100%;
+	    height: auto;
 	    margin: 10px 0 15px 0;
 	    position: relative;
 	    top: 0;
+	    left: 0 !important;
 	}
 
 	.dropdown-menu ul {
